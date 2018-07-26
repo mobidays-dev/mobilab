@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: https://github.com/mobidays-dev/mobidays-dev.github.io
+  repo: mobidays-dev/mobidays-dev.github.io
   #repo_id: 7452837
   branch: master
   site_domain: mobitest.netlify.com
