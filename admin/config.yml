@@ -1,11 +1,12 @@
 backend:
-  name: gitlab
-  repo: mobidays/mobidays.gitlab.io
+  name: github
+  repo: https://github.com/mobidays-dev/mobidays-dev.github.io
   #repo_id: 7452837
   branch: master
-  site_domain: mobilab.netlify.com
+  site_domain: mobitest.netlify.com
 
-display_url: https://mobilab.netlify.com/
+publish_mode: editorial_workflow
+display_url: https://mobitest.netlify.com/
 media_folder: "static/images"
 # public_folder: "/public/"
 
