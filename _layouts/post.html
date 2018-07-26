@@ -21,7 +21,7 @@ layout: default
         </cite>
     -->
     <!-- Look the author details up from the site config. -->
-      {% assign author = site.data.authors[page.author] %}
+      {% assign author = site.data.authors | where:"name",page.author %}
 
       <!-- Output author details if some exist. -->
       {% if author %}
