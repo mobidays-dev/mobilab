@@ -1,0 +1,33 @@
+
+<!--댓글-->
+<div class="reply">
+  <div class="livere-close"></div>
+  <!-- 라이브리 시티 설치 코드 -->
+  <div id="lv-container" data-id="city"
+    data-uid="MTAyMC8zMjQxMi84OTcz">
+    <script type="text/javascript">
+      /* livere api의 경우 refer를 KEY로 하여 댓글을 받아옴
+       * (http:// 제외 필요) https://livere.com 2017/12/15 - byn
+       */
+      var content_id = location.href.replace('https://', '');
+      window.livereOptions = {
+        refer : content_id
+      };
+      /* 마이너한 이슈로 공유하기 설정했을 경우 정상적으로 썸네일이 표시가 되지 않음
+         js 를 받아서 커스터마이즈 하던가 callback을 가로채는데 공수가 많이 들 것같아 일단 유지 2017/12/15 - byn
+       */
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') {
+          return;
+        }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  </div>
+  <!-- 시티 설치 코드 끝 -->
+</div>
+<!--//댓글-->

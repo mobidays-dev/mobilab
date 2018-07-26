@@ -1,0 +1,69 @@
+title: mobilab 기술 블로그
+email: mobione@mobidays.com
+description: |
+  세상 모든 트래픽의 가장 효율적인 연결.
+  Mobidays의 기술 블로그입니다.
+baseurl: ''
+url: 'https://mobilab.netlify.com/'
+timezone: Asia/Seoul
+
+# repository: kakao/kakao.github.io
+
+permalink: /:year/:month/:day/:slug/
+
+excerpt_separator: <!--more-->
+
+markdown: kramdown
+
+krandown:
+  input: GFM
+  highlighter: rouge
+
+# plugins:
+plugins_dir:
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: '/page/:num/'
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: authors
+    values:
+      layout: author
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag
+
+exclude: [README.md, Gemfile, Gemfile.lock]
+
+keep_files: [assets, static]
+github: [metadata]
+# iolo's custom
+author: mobione@mobidays.com
+image: '/assets/images/default_blog_cover.jpg'
+asset_url: /assets
+#asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
+#asset_url: //t1.daumcdn.net/osa/blog/assets
+# google_analytics:
+#  ua: 'UA-72007721-1'
+#facebook:
+#  app_id: '1204347326263800'
+#  username: nkakao
+#twitter:
+#  username: kakaodev
+#google_plus:
+#  username: kakaodev
+#github_url:
+#  username: kakao

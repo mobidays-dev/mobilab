@@ -1,0 +1,78 @@
+backend:
+  name: gitlab
+  repo: mobidays/mobidays.gitlab.io
+  #repo_id: 7452837
+  branch: master
+  site_domain: mobilab.netlify.com
+
+display_url: https://mobilab.netlify.com/
+media_folder: "static/images"
+# public_folder: "/public/"
+
+
+collections:
+  - name: "post" # Used in routes, e.g. /admin/collections/blog
+    label: "Posts" # Used in the UI
+    label_singular: "Post" # Used in the UI, ie: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines that are specific to a collection.
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "제목", name: "title", widget: "string"}
+      - {label: "작성자", name: "author", widget: "string"}
+      - {label: "작성일자", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
+      - {label: "커버이미지", name: "image", widget: "image"}
+      - {label: "태그", name: "tags", widget: "string"}
+      - {label: "포스트", name: "body", widget: "markdown"}
+    meta:
+      - {label: "SEO Description", name: "description", widget: "text"}
+
+  - name: "authors" # Used in routes, e.g. /admin/collections/blog
+    label: "Authors" # Used in the UI
+    label_singular: "Author" # Used in the UI, ie: "New Post"
+    folder: "_authors" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "닉네임", name: "name", widget: "string"}
+      - {label: "이름", name: "title", widget: "string"}
+      - {label: "이메일", name: "email", widget: "string"}
+      - {label: "짧은 소개 한마디", name: "desc", widget: "string"}
+      - {label: "썸네일", name: "image", widget: "image"}
+
+  #- name: "settings"
+  #  label: "Settings"
+  #  delete: false # Prevent users from deleting documents in this collection
+  #  editor:
+  #    preview: false
+  #  files:
+  #    - name: "general"
+  #      label: "Site Settings"
+  #      file: "_data/settings.json"
+  #      description: "General Site Settings"
+  #      fields:
+  #        - {label: "Global title", name: "site_title", widget: "string"}
+  #        - label: "Post Settings"
+  #          name: posts
+  #          widget: "object"
+  #          fields:
+  #            - {label: "Number of posts on frontpage", name: front_limit, widget: number}
+  #            - {label: "Default Author", name: author, widget: string}
+  #            - {label: "Default Thumbnail", name: thumb, widget: image, class: "thumb"}
+#
+#      - name: "authors"
+#        label: "Authors"
+#        file: "_data/authors.yml"
+#        description: "Author descriptions"
+#        fields:
+#          - name: authors
+#            label: Authors
+#            label_singular: "Author"
+#            widget: list
+#            fields:
+#              - {label: "Name", name: "name", widget: "string"}
+#              - {label: "Description", name: "description", widget: "markdown"}
