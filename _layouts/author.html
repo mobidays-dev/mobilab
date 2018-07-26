@@ -1,6 +1,25 @@
 ---
 layout: default
 ---
+
+{% assign author = site.data.authors[page.author] %}
+
+<!-- Output author details if some exist. -->
+{% if author %}
+<cite>
+  By.&nbsp;
+  <a href="/authors/{{ author.name }}" >
+      {{ author.name }}
+      {% if author.email %}
+      <b style="font-size:11px;">
+        &#60;{{ author.email }}&#62;
+      </b>
+      {% endif %}
+  </a>
+
+</cite>
+{% endif %}
+
 <div id="cover" class="container"
      {% if page.cover %}style="background-image: url({{ page.cover }});"{% endif %}>
     <div>
