@@ -30,7 +30,8 @@ collections:
   authors:
     source: _data/authors.yml
     output: true
-    permalink: /authors/:path/
+    #permalink: /authors/:path/
+    permalink: /authors/
   tags:
     output: true
     permalink: /tags/:path/
