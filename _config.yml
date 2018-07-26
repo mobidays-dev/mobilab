@@ -28,6 +28,7 @@ paginate_path: '/page/:num/'
 
 collections:
   authors:
+    source: _data/authors.yml
     output: true
     permalink: /authors/:path/
   tags:
