@@ -19,6 +19,26 @@ layout: default
 
 </cite>
 {% endif %}
+<p>test</p>
+{% assign author = site.data.authors[page.name] %}
+
+<!-- Output author details if some exist. -->
+{% if author %}
+<cite>
+  By.&nbsp;
+  <a href="/authors/{{ author.name }}" >
+      {{ author.name }}
+      {% if author.email %}
+      <b style="font-size:11px;">
+        &#60;{{ author.email }}&#62;
+      </b>
+      {% endif %}
+  </a>
+
+</cite>
+{% endif %}
+
+<p>]{{ page }}</p>
 
 <div id="cover" class="container"
      {% if page.cover %}style="background-image: url({{ page.cover }});"{% endif %}>
