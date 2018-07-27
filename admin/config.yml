@@ -30,6 +30,7 @@ collections:
         searchFields: ["name", "title"]
         valueField: "name"
         displayFields: ["name", "title"]
+        default: "dev"
       #- {label: "작성자", name: "author", widget: "string"}
       #- label : "작성자"
       #  name : "author"
@@ -61,24 +62,25 @@ collections:
       - {label: "포스트", name: "body", widget: "markdown"}
     #meta:
     #  - {label: "SEO Description", name: "description", widget: "text"}
-- label: "Profile"
-  name: "profile"
-  widget: "object"
-  fields:
-    - {label: "Public", name: "public", widget: "boolean", default: true}
-    - {label: "Name", name: "name", widget: "string"}
-    - label: "Birthdate"
-      name: "birthdate"
-      widget: "date"
-      default: ""
-      format: "MM/DD/YYYY"
-    - label: "Address"
-      name: "address"
-      widget: "object"
-      fields:
-        - {label: "Street Address", name: "street", widget: "string"}
-        - {label: "City", name: "city", widget: "string"}
-        - {label: "Postal Code", name: "post-code", widget: "string"}
+      - label: "Profile"
+        name: "profile"
+        widget: "object"
+        fields:
+          - {label: "Public", name: "public", widget: "boolean", default: true}
+          - {label: "Name", name: "name", widget: "string"}
+          - label: "Birthdate"
+            name: "birthdate"
+            widget: "date"
+            default: ""
+            format: "MM/DD/YYYY"
+          - label: "Address"
+            name: "address"
+            widget: "object"
+            fields:
+              - {label: "Street Address", name: "street", widget: "string"}
+              - {label: "City", name: "city", widget: "string"}
+              - {label: "Postal Code", name: "post-code", widget: "string"}
+
   - name: "authors" # Used in routes, e.g. /admin/collections/blog
     label: "Authors" # Used in the UI
     label_singular: "Author" # Used in the UI, ie: "New Post"
