@@ -1,11 +1,10 @@
 backend:
   name: github
   repo: mobidays-dev/mobidays-dev.github.io
-  #repo_id: 7452837
   branch: master
   site_domain: mobitest.netlify.com
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 display_url: https://mobitest.netlify.com/
 media_folder: "static/images"
 # public_folder: "/public/"
@@ -24,7 +23,6 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "제목", name: "title", widget: "string"}
-      - {label: "노출여부", name: "published", widget: "boolean", default: false }
       - {label: "작성자", name: "author", widget: "string"}
       #- label : "작성자"
       #  name : "author"
@@ -33,7 +31,8 @@ collections:
       #      - {label: "작성자", name: "author", widget: "string" }
       - {label: "작성일자", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
-      - {label: "태그", name: "tags", widget: "string"}
+      - {label: "태그", name: "tags", widget: "string", required: false }
+      - {label: "노출여부", name: "published", widget: "boolean", default: false }
       - {label: "포스트", name: "body", widget: "markdown"}
     #meta:
     #  - {label: "SEO Description", name: "description", widget: "text"}
@@ -48,7 +47,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "닉네임", name: "name", widget: "string"}
-      - {label: "이름", name: "title", widget: "string"}
+      - {label: "이름", name: "title", widget: "string", required: false }
       - {label: "이메일", name: "email", widget: "string",  required: false }
       - {label: "짧은 소개 한마디", name: "desc", widget: "string",  required: false }
       - {label: "썸네일", name: "image", widget: "image"}
