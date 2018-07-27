@@ -1,9 +1,9 @@
 {% if include.author %}
 <cite>
-;&copy; <a href="{{ include.author.link }}" target="_blank">{{ author.name }}</a>
-    {% author.email %}
+;&copy; <a href="{{ include.author.link }}" target="_blank">{{ include.author.name }}</a>
+    {% include.author.email %}
     <b style="font-size:11px;">
-      &#60;{{ author.email }}&#62;
+      &#60;{{ include.author.email }}&#62;
     </b>
     {% endif %}
   {% endif %}
