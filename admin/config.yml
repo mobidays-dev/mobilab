@@ -34,7 +34,9 @@ collections:
       - label: "태그"
         name: "tags"
         widget: "list"
+        allow_add: true
         required: false
+        default: []
       # - {label: "태그", name: "tags", widget: "string", required: false }
       - {label: "노출여부", name: "published", widget: "boolean", default: false }
       - {label: "포스트", name: "body", widget: "markdown"}
