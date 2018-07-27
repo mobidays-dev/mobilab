@@ -10,11 +10,13 @@ layout: default
             <span class="sr-only">{{ page.name }}'s avartar</span>
         </div>
         <h1>{{ page.title | default: page.name }}
-          {% if page.name %}
-            <sub> ({{ page.name }}) </sub>
+          {% if author.name %}
+          <b>
+            ( {{ author.name }} )
+          </b>
           {% endif %}
         </h1>
-        <p>{{ page.desc }}</p>
+        <sub>{{ page.desc }}</sub>
     </div>
 </div>
 

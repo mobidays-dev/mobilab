@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-<!--{% assign author = site.authors | where: 'name', page.author | first %}-->
+{% assign author = site.authors | where: 'name', page.author | first %}
 <div id="cover" class="container"
      {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
     <div>
         <h1>{{ page.title }}</h1>
+        <p>{{ site.date }}</p>
+        <!--
         <a href="#">{{ site.date }}</a>
         <cite>
           By.&nbsp;
@@ -19,6 +21,7 @@ layout: default
           </a>
 
         </cite>
+      -->
 
 
     <!-- Look the author details up from the site config. -->
@@ -41,7 +44,7 @@ layout: default
       </cite>
       {% endif %}
 -->
-        {% include cover_link.html cover=page.cover %}
+        {% include cover_link.html summary=page, postdate=site.date %}
     </div>
 </div>
 
@@ -67,11 +70,11 @@ layout: default
             </div>
             <p id="author-name" style="font-weight:bold;">
               {{ author.name }}
-              {% if author.email %}
-              <b style="font-size:11px;">
-                &#60;{{ author.email }}&#62;
-              </b>
-              {% endif %}
+                {% if author.email %}
+                <b style="font-size:11px;">
+                  &#60;{{ author.email }}&#62;
+                </b>
+                {% endif %}
             </p>
         </a>
         <p id="post-date">

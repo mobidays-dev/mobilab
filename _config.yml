@@ -7,7 +7,7 @@ baseurl: ''
 url: 'https://mobilab.netlify.com/'
 timezone: Asia/Seoul
 
-# repository: kakao/kakao.github.io
+repository:  mobidays-dev/mobidays-dev.github.io
 
 permalink: /:year/:month/:day/:slug/
 
@@ -52,6 +52,7 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 
 keep_files: [assets, static]
 github: [metadata]
+
 # iolo's custom
 author: mobione@mobidays.com
 image: '/assets/images/default_blog_cover.jpg'

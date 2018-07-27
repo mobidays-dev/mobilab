@@ -39,18 +39,6 @@ collections:
       #      - {label: "작성자", name: "author", widget: "string" }
       - {label: "작성일자", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
-      - label: "태그테스트"
-        name: "testimonials"
-        widget: "list"
-        allow_add: true
-        required: false
-        field:
-        - label: "작성자"
-          name: "test"
-          widget: "relation"
-          collection: "authors"
-          searchFields: ["name", "title"]
-          valueField: "name"
       - label: "태그"
         name: "tags"
         widget: "list"
@@ -62,24 +50,7 @@ collections:
       - {label: "포스트", name: "body", widget: "markdown"}
     #meta:
     #  - {label: "SEO Description", name: "description", widget: "text"}
-      - label: "Profile"
-        name: "profile"
-        widget: "object"
-        fields:
-          - {label: "Public", name: "public", widget: "boolean", default: true}
-          - {label: "Name", name: "name", widget: "string"}
-          - label: "Birthdate"
-            name: "birthdate"
-            widget: "date"
-            default: ""
-            format: "MM/DD/YYYY"
-          - label: "Address"
-            name: "address"
-            widget: "object"
-            fields:
-              - {label: "Street Address", name: "street", widget: "string"}
-              - {label: "City", name: "city", widget: "string"}
-              - {label: "Postal Code", name: "post-code", widget: "string"}
+
 
   - name: "authors" # Used in routes, e.g. /admin/collections/blog
     label: "Authors" # Used in the UI
@@ -95,6 +66,20 @@ collections:
       - {label: "이메일", name: "email", widget: "string",  required: false }
       - {label: "짧은 소개", name: "desc", widget: "text",  required: false }
       - {label: "아바타", name: "image", widget: "image", default: "/static/authors/default.png"}
+
+  - name: "tags" # Used in routes, e.g. /admin/collections/blog
+    label: "Tag" # Used in the UI
+    label_singular: "Tag" # Used in the UI, ie: "New Post"
+    folder: "_tags" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    editor:
+      preview: false
+    slug: {{slug}} # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+    name: ec2
+    title: 'Amazon EC2'
+      - {label: "태그명 {{slug}}", name: "name", widget: "string"}
+      - {label: "태그설명", name: "title", widget: "text", required: false }
 
   #- name: "settings"
   #  label: "Settings"

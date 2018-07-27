@@ -1,9 +1,11 @@
-{% if include.cover %}
+{% if include.summary %}
 <cite>
-  커버 이미지 출처: <a href="{{ include.cover.link }}" target="_blank">{{ include.cover.title }}</a>
-  {% if include.cover.author %}
-  &copy; <a href="{{ include.cover.author.link }}" target="_blank">{{ include.cover.author.name }}</a>
+;&copy; <a href="{{ include.summary.author.link }}" target="_blank">{{ include.summary.author.name }}</a>
+    {% if include.summary.author.email %}
+    <b style="font-size:11px;">
+      &#60;{{ author.email }}&#62;
+    </b>
+    {% endif %}
   {% endif %}
 </cite>
 {% endif %}
-
