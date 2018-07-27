@@ -45,6 +45,7 @@ collections:
         required: false
         field:
         - label: "작성자"
+          name: "test"
           widget: "relation"
           collection: "authors"
           searchFields: ["name", "title"]
