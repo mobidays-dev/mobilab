@@ -15,6 +15,52 @@ collections:
     label: "Posts" # Used in the UI
     label_singular: "Post" # Used in the UI, ie: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
+    filter:
+      field: "published"
+      value: true
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines that are specific to a collection.
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "제목", name: "title", widget: "string"}
+      - label: "작성자"
+        name: "author"
+        widget: "relation"
+        collection: "authors"
+        searchFields: ["name", "title"]
+        valueField: "name"
+        displayFields: ["name", "title"]
+        default: "dev"
+      #- {label: "작성자", name: "author", widget: "string"}
+      #- label : "작성자"
+      #  name : "author"
+      #  folder: "_auhors" # The path to the folder where the documents are stored
+      #  widget: "list"
+      #      - {label: "작성자", name: "author", widget: "string" }
+      - {label: "작성일자", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
+      - {label: "커버이미지", name: "image", widget: "image", required: false }
+      - label: "태그"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        required: false
+        default: []
+      # - {label: "태그", name: "tags", widget: "string", required: false }
+      - {label: "노출여부", name: "published", widget: "boolean", default: true }
+      - {label: "포스트", name: "body", widget: "markdown"}
+    #meta:
+    #  - {label: "SEO Description", name: "description", widget: "text"}
+
+  - name: "draft" # Used in routes, e.g. /admin/collections/blog
+    label: "Draft" # Used in the UI
+    label_singular: "Draft" # Used in the UI, ie: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    filter:
+      field: "published"
+      value: false
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines that are specific to a collection.
@@ -50,7 +96,6 @@ collections:
       - {label: "포스트", name: "body", widget: "markdown"}
     #meta:
     #  - {label: "SEO Description", name: "description", widget: "text"}
-
 
   - name: "authors" # Used in routes, e.g. /admin/collections/blog
     label: "Authors" # Used in the UI
