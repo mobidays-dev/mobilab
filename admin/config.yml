@@ -45,12 +45,10 @@ collections:
         required: false
         field:
         - label: "작성자"
-          name: "author"
           widget: "relation"
           collection: "authors"
           searchFields: ["name", "title"]
           valueField: "name"
-          displayFields: ["name", "title"]
       - label: "태그"
         name: "tags"
         widget: "list"
