@@ -54,7 +54,7 @@ collections:
     #meta:
     #  - {label: "SEO Description", name: "description", widget: "text"}
 
-  - name: "draft" # Used in routes, e.g. /admin/collections/blog
+  - name: "drafts" # Used in routes, e.g. /admin/collections/blog
     label: "Draft" # Used in the UI
     label_singular: "Draft" # Used in the UI, ie: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
