@@ -109,7 +109,7 @@ collections:
       - {label: "닉네임", name: "name", widget: "string"}
       - {label: "이름", name: "title", widget: "string", required: false }
       - {label: "이메일", name: "email", widget: "string",  required: false }
-      - {label: "짧은 소개", name: "desc", widget: "text",  required: false }
+      - {label: "짧은 소개", name: "desc", widget: "string",  required: false }
       - {label: "아바타", name: "image", widget: "image", default: "/static/authors/default.png"}
 
   - name: "tags" # Used in routes, e.g. /admin/collections/blog
