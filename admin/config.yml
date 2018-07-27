@@ -30,6 +30,7 @@ collections:
         searchFields: ["name", "title"]
         valueField: "name"
         displayFields: ["name", "title"]
+        default: "dev"
       #- {label: "작성자", name: "author", widget: "string"}
       #- label : "작성자"
       #  name : "author"
@@ -61,7 +62,24 @@ collections:
       - {label: "포스트", name: "body", widget: "markdown"}
     #meta:
     #  - {label: "SEO Description", name: "description", widget: "text"}
-
+- label: "Profile"
+  name: "profile"
+  widget: "object"
+  fields:
+    - {label: "Public", name: "public", widget: "boolean", default: true}
+    - {label: "Name", name: "name", widget: "string"}
+    - label: "Birthdate"
+      name: "birthdate"
+      widget: "date"
+      default: ""
+      format: "MM/DD/YYYY"
+    - label: "Address"
+      name: "address"
+      widget: "object"
+      fields:
+        - {label: "Street Address", name: "street", widget: "string"}
+        - {label: "City", name: "city", widget: "string"}
+        - {label: "Postal Code", name: "post-code", widget: "string"}
   - name: "authors" # Used in routes, e.g. /admin/collections/blog
     label: "Authors" # Used in the UI
     label_singular: "Author" # Used in the UI, ie: "New Post"
@@ -74,8 +92,8 @@ collections:
       - {label: "닉네임", name: "name", widget: "string"}
       - {label: "이름", name: "title", widget: "string", required: false }
       - {label: "이메일", name: "email", widget: "string",  required: false }
-      - {label: "짧은 소개 한마디", name: "desc", widget: "string",  required: false }
-      - {label: "썸네일", name: "image", widget: "image"}
+      - {label: "짧은 소개", name: "desc", widget: "text",  required: false }
+      - {label: "아바타", name: "image", widget: "image", default: "/static/authors/default.png"}
 
   #- name: "settings"
   #  label: "Settings"
