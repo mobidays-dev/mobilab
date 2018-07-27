@@ -1,5 +1,4 @@
 ---
-published: false
 name: sungjun.kim
 title: 김성준
 email: atmnet@mobidays.com
