@@ -76,8 +76,6 @@ collections:
       preview: false
     slug: {{slug}} # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-    name: ec2
-    title: 'Amazon EC2'
       - {label: "태그명 {{slug}}", name: "name", widget: "string"}
       - {label: "태그설명", name: "title", widget: "text", required: false }
 
