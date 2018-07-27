@@ -30,7 +30,6 @@ collections:
         searchFields: ["name", "title"]
         valueField: "name"
         displayFields: ["name", "title"]
-        default: "dev"
       #- {label: "작성자", name: "author", widget: "string"}
       #- label : "작성자"
       #  name : "author"
