@@ -1,4 +1,4 @@
 ---
-name: aws
-title: 'AWS: Amazon Web Service'
+name: design
+title: '디자인'
 ---
