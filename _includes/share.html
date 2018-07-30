@@ -1,20 +1,33 @@
 {% assign abs_page_url = site.url | append: site.baseurl | append: page.url %}
 <ul id="shares">
-    <li class="stalk" style="display:none">
+  {% if site.naver_blog %}
+  <li>
+      <a id="share-naver" href="http://share.naver.com/web/shareView.nhn?url={{ abs_page_url }}&title={{ page.title | uri_escape }}"
+         onclick="window.open(this.href, 'naver-share','width=580,height=296');return false;">
+          <span class="sr-only">Share to Facebook</span>
+      </a>
+  </li>
+  {% endif %}
+
+
+  {% if site.facebook %}
+  <li>
+      <a id="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ abs_page_url }}"
+         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <span class="sr-only">Share to Facebook</span>
+      </a>
+  </li>
+  {% endif %}
+
+    {% if site.kakao %}
+    <li class="stalk">
         <a id="kakao-link-btn" href="javascript:;"></a>
     </li>
     <li>
         <a id="share-kakaostory" href="javascript:shareStory('{{ abs_page_url }}');"></a>
     </li>
-
-    {% if site.facebook %}
-    <li>
-        <a id="share-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ abs_page_url }}"
-           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-            <span class="sr-only">Share to Facebook</span>
-        </a>
-    </li>
     {% endif %}
+
     {% if site.twitter %}
     <li>
         <a id="share-twitter"

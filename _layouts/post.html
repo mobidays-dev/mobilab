@@ -6,9 +6,9 @@ layout: default
      {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
     <div>
         <h1>{{ page.title }}</h1>
-        <p></p>
-
-        <a href="#">{{ page.date }}</a>
+        <p>
+          <a href="#">{{ page.date  | date: '%Y/%m/%d' }}</a>
+        </p>
         <cite>
           By.&nbsp;
           <a href="/authors/{{ author.name }}" >

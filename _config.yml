@@ -63,10 +63,11 @@ asset_url: /assets
 #  ua: 'UA-72007721-1'
 facebook:
   app_id: '2103909196517733'
-#  username: nkakao
-#twitter:
-#  username: kakaodev
-#google_plus:
-#  username: kakaodev
-#github_url:
-#  username: kakao
+kakao:
+  app_key : '6f032c9f8925f03d4b23e8a9058837b1'
+twitter:
+  username: mobidev
+google_plus:
+  username: mobidev
+naver_blog:
+  username: mobidev

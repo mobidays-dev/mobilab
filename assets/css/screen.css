@@ -533,6 +533,11 @@ for small screen(<720px):
     background-size: 20px 20px;
 }
 
+#share-naver {
+    background: url(../images/pc/share_naver.png) no-repeat;
+    background-size: 20px 20px;
+}
+
 #share-facebook {
     background: url(../images/pc/share_face.png) no-repeat;
     background-size: 20px 20px;
@@ -1361,6 +1366,11 @@ body.page-template {
         background-size: 22px 22px;
     }
 
+    #share-naver {
+        background-image: url(../images/mo/share_naver.png);
+        background-size: 22px 22px;
+    }
+
     #share-facebook {
         background-image: url(../images/mo/share_face.png);
         background-size: 22px 22px;
@@ -1662,6 +1672,11 @@ body.page-template {
         background-size: 22px 22px;
     }
 
+    #share-naver {
+        background-image: url(../images/mo/share_naver@2x.png);
+        background-size: 22px 22px;
+    }
+
     #share-facebook {
         background-image: url(../images/mo/share_face@2x.png);
     }
@@ -1749,6 +1764,11 @@ body.page-template {
 
     #share-kakaostory {
         background-image: url(../images/mo/share_story@3x.png);
+        background-size: 22px 22px;
+    }
+
+    #share-naver {
+        background-image: url(../images/mo/share_naver@3x.png);
         background-size: 22px 22px;
     }
 
