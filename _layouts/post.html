@@ -3,12 +3,12 @@ layout: default
 ---
 {% assign author = site.authors | where: 'name', page.author | first %}
 <div id="cover" class="container"
-     {% if page.image %}style="background-image: url({{ page.image }}); color:white;"{% endif %}>
+     {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
     <div>
         <h1>{{ page.title }}</h1>
-        <b>
+        <p style="color:white !important;">
           {{ page.date  | date: '%Y/%m/%d' }}
-        </b>
+        </p>
         <cite>
           By.&nbsp;
           <b style="font-size:11px;">
