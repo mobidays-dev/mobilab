@@ -11,13 +11,13 @@ layout: default
         </div>
         <div>
             <h1>{{ page.title | default: page.name }}
-              {% if author.name %}
+              {% if page.name %}
               <b>
-                ( {{ author.name }} )
+                ( {{ page.name }} )
               </b>
               {% endif %}
             </h1>
-            <sub>{{ page.desc }}</sub>
+            <p>{{ page.desc }}</p>
 
         </div>
     </div>
