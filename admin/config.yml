@@ -72,6 +72,13 @@ collections:
         default: "dev"
       - {label: "작성일자", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
+      - label: "커버이미지 출처(필요시)"
+        name: "cover"
+        widget: "object"
+        required: false
+        fields: 
+          - {label: "이미지 출처", name: "title", widget: "string", required: false }
+          - {label: "이미지 출처 URL", name: "link", widget: "string", required: false }
       - label: "태그"
         name: "tags"
         widget: "list"
