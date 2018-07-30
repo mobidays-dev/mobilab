@@ -78,7 +78,6 @@ collections:
         fields:
             - {label: "이미지 출처", name: "title", widget: "string", required: false }
             - {label: "이미지 출처 URL", name: "link", widget: "string", required: false }
-        required: false
 
       - label: "태그"
         name: "tags"
