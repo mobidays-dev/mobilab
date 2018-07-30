@@ -36,6 +36,13 @@ collections:
         default: "dev"
       - {label: "작성일자", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
+      - label: "커버이미지 출처 (필요시)"
+        name: "cover"
+        widget: "object"
+        fields:
+            - {label: "이미지 출처", name: "title", widget: "string", required: false }
+            - {label: "이미지 출처 URL", name: "link", widget: "string", required: false }
+        required: false
       - label: "태그"
         name: "tags"
         widget: "list"
@@ -72,13 +79,13 @@ collections:
         default: "dev"
       - {label: "작성일자", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
-      - label: "커버이미지 출처(필요시)"
+      - label: "커버이미지 출처 (필요시)"
         name: "cover"
         widget: "object"
         fields:
             - {label: "이미지 출처", name: "title", widget: "string", required: false }
             - {label: "이미지 출처 URL", name: "link", widget: "string", required: false }
-
+        required: false
       - label: "태그"
         name: "tags"
         widget: "list"
