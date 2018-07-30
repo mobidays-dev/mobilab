@@ -6,45 +6,19 @@ layout: default
      {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
     <div>
         <h1>{{ page.title }}</h1>
-        <p>{{ site.date }}</p>
-        <!--
+        <p></p>
+
         <a href="#">{{ site.date }}</a>
         <cite>
           By.&nbsp;
           <a href="/authors/{{ author.name }}" >
               {{ author.name }}
-              {% if author.email %}
               <b style="font-size:11px;">
-                &#60;{{ author.email }}&#62;
+                ( {{ site.date }} )
               </b>
-              {% endif %}
+
           </a>
-
         </cite>
-      -->
-
-
-    <!-- Look the author details up from the site config. -->
-      <!--{% assign author = site.data.authors[page.author] %}-->
-      <!-- Output author details if some exist. -->
-      <!--
-      {% assign author = site.data.authors[page.author] | where:"name", page.author  %}
-      {% if author %}
-      <cite>
-        By.&nbsp;
-        <a href="/authors/{{ author.name }}" >
-            {{ author.name }}
-            {% if author.email %}
-            <b style="font-size:11px;">
-              &#60;{{ author.email }}&#62;
-            </b>
-            {% endif %}
-        </a>
-
-      </cite>
-      {% endif %}
--->
-        {% include cover_link.html author=author %}
     </div>
 </div>
 
