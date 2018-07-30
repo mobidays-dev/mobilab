@@ -61,8 +61,8 @@ asset_url: /assets
 #asset_url: //t1.daumcdn.net/osa/blog/assets
 # google_analytics:
 #  ua: 'UA-72007721-1'
-#facebook:
-#  app_id: '1204347326263800'
+facebook:
+  app_id: '2103909196517733'
 #  username: nkakao
 #twitter:
 #  username: kakaodev
