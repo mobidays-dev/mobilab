@@ -34,12 +34,6 @@ collections:
         valueField: "name"
         displayFields: ["name", "title"]
         default: "dev"
-      #- {label: "작성자", name: "author", widget: "string"}
-      #- label : "작성자"
-      #  name : "author"
-      #  folder: "_auhors" # The path to the folder where the documents are stored
-      #  widget: "list"
-      #      - {label: "작성자", name: "author", widget: "string" }
       - {label: "작성일자", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
       - label: "태그"
@@ -48,7 +42,6 @@ collections:
         allow_add: true
         required: false
         default: []
-      # - {label: "태그", name: "tags", widget: "string", required: false }
       - {label: "노출여부", name: "published", widget: "boolean", default: true }
       - {label: "포스트", name: "body", widget: "markdown"}
     #meta:
@@ -77,12 +70,6 @@ collections:
         valueField: "name"
         displayFields: ["name", "title"]
         default: "dev"
-      #- {label: "작성자", name: "author", widget: "string"}
-      #- label : "작성자"
-      #  name : "author"
-      #  folder: "_auhors" # The path to the folder where the documents are stored
-      #  widget: "list"
-      #      - {label: "작성자", name: "author", widget: "string" }
       - {label: "작성일자", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
       - label: "태그"
@@ -91,11 +78,8 @@ collections:
         allow_add: true
         required: false
         default: []
-      # - {label: "태그", name: "tags", widget: "string", required: false }
       - {label: "노출여부", name: "published", widget: "boolean", default: false }
       - {label: "포스트", name: "body", widget: "markdown"}
-    #meta:
-    #  - {label: "SEO Description", name: "description", widget: "text"}
 
   - name: "authors" # Used in routes, e.g. /admin/collections/blog
     label: "Authors" # Used in the UI
@@ -122,36 +106,3 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "태그명 {{slug}}", name: "name", widget: "string"}
       - {label: "태그설명", name: "title", widget: "text", required: false }
-
-  #- name: "settings"
-  #  label: "Settings"
-  #  delete: false # Prevent users from deleting documents in this collection
-  #  editor:
-  #    preview: false
-  #  files:
-  #    - name: "general"
-  #      label: "Site Settings"
-  #      file: "_data/settings.json"
-  #      description: "General Site Settings"
-  #      fields:
-  #        - {label: "Global title", name: "site_title", widget: "string"}
-  #        - label: "Post Settings"
-  #          name: posts
-  #          widget: "object"
-  #          fields:
-  #            - {label: "Number of posts on frontpage", name: front_limit, widget: number}
-  #            - {label: "Default Author", name: author, widget: string}
-  #            - {label: "Default Thumbnail", name: thumb, widget: image, class: "thumb"}
-#
-#      - name: "authors"
-#        label: "Authors"
-#        file: "_data/authors.yml"
-#        description: "Author descriptions"
-#        fields:
-#          - name: authors
-#            label: Authors
-#            label_singular: "Author"
-#            widget: list
-#            fields:
-#              - {label: "Name", name: "name", widget: "string"}
-#              - {label: "Description", name: "description", widget: "markdown"}
