@@ -9,16 +9,21 @@ layout: default
              {% if page.image %}style="background-image:url({{ page.image }});"{% endif %}>
             <span class="sr-only">{{ page.name }}'s avartar</span>
         </div>
-        <h1>{{ page.title | default: page.name }}
-          {% if author.name %}
-          <b>
-            ( {{ author.name }} )
-          </b>
-          {% endif %}
-        </h1>
-        <sub>{{ page.desc }}</sub>
+        <div>
+            <h1>{{ page.title | default: page.name }}
+              {% if author.name %}
+              <b>
+                ( {{ author.name }} )
+              </b>
+              {% endif %}
+            </h1>
+            <sub>{{ page.desc }}</sub>
+
+        </div>
     </div>
 </div>
+
+
 
 <div id="navbar" class="container">
     <h5>&nbsp;&nbsp;{{ page.title | default: page.name }}'s Posts</h5>

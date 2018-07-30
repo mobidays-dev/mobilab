@@ -24,7 +24,8 @@
 </script>
 <script>
     var _ua = navigator.userAgent.toLowerCase().match(/iphone|ipod|ipad|android/);
-    var sb = document.getElementById("shares").getElementsByTagName("li");
+    var sb = document.getElementById("kakao-link-btn").parentElement;
+
     if (_ua) {
         sb[0].style.display = "inline";
     }
