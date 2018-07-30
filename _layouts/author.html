@@ -12,12 +12,12 @@ layout: default
         <div>
             <h1>{{ page.title | default: page.name }}
               {% if page.name %}
-              <b style="font-size:11px;padding-top:1px;">
+              <b style="font-size:11px;">
                 &#40;{{ page.name }}&#41;
               </b>
               {% endif %}
             </h1>
-            <p>{{ page.desc }}</p>
+            <p style="padding-top:1px;">{{ page.desc }}</p>
 
         </div>
     </div>
