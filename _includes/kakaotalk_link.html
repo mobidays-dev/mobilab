@@ -24,8 +24,10 @@
 </script>
 <script>
     var _ua = navigator.userAgent.toLowerCase().match(/iphone|ipod|ipad|android/);
+    console.log(navigator.userAgent.toLowerCase());
+    console.log(_ua)
     var sb = document.getElementById("kakao-link-btn").parentElement;
-
+    console.log(sb)
     if (_ua) {
         sb[0].style.display = "inline";
     }
