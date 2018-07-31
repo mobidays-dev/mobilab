@@ -1,10 +1,10 @@
-title: mobilab 기술 블로그
+title: Mobidays 기술 블로그
 email: mobione@mobidays.com
 description: |
   세상 모든 트래픽의 가장 효율적인 연결.
-  Mobidays의 기술 블로그입니다.
+  Mobidays의 기술 블로그 mobilab입니다.
 baseurl: ''
-url: 'https://mobilab.netlify.com/'
+url: 'https://mobilab.netlify.com'
 timezone: Asia/Seoul
 
 repository:  mobidays-dev/mobidays-dev.github.io
