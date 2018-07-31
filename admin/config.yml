@@ -91,7 +91,7 @@ collections:
         widget: "list"
         allow_add: true
         required: false
-        default: []
+        # default: []
       - {label: "노출여부", name: "published", widget: "boolean", default: false }
       - {label: "포스트", name: "body", widget: "markdown"}
 
