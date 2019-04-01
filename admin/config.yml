@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: 'mobidays-dev/mobidays-dev.github.io'
+  repo: mobidays-dev/mobidays-dev.github.io
   branch: master
   site_domain: mobidays-dev.netlify.com
 
@@ -94,3 +94,29 @@ collections:
         # default: []
       - {label: "노출여부", name: "published", widget: "boolean", default: false }
       - {label: "포스트", name: "body", widget: "markdown"}
+
+  - name: "authors" # Used in routes, e.g. /admin/collections/blog
+    label: "Authors" # Used in the UI
+    label_singular: "Author" # Used in the UI, ie: "New Post"
+    folder: "_authors" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "닉네임", name: "name", widget: "string"}
+      - {label: "이름", name: "title", widget: "string", required: false }
+      - {label: "이메일", name: "email", widget: "string",  required: false }
+      - {label: "짧은 소개", name: "desc", widget: "string",  required: false }
+      - {label: "아바타", name: "image", widget: "image", default: "/static/authors/default.png"}
+  - name: "tags" # Used in routes, e.g. /admin/collections/blog
+    label: "Tag" # Used in the UI
+    label_singular: "Tag" # Used in the UI, ie: "New Post"
+    folder: "_tags" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    editor:
+      preview: false
+    slug: {{slug}} # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "태그명 {{slug}}", name: "name", widget: "string"}
+      - {label: "태그설명", name: "title", widget: "text", required: false }
