@@ -2,10 +2,10 @@ backend:
   name: github
   repo: mobidays-dev/mobidays-dev.github.io
   branch: master
-  site_domain: mobitest.netlify.com
+  site_domain: mobidays-dev.netlify.com
 
 # publish_mode: editorial_workflow
-display_url: https://mobitest.netlify.com/
+display_url: https://mobidays-dev.netlify.com/
 media_folder: "static/images"
 # public_folder: "/public/"
 
