@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: 'mobidays-dev/mobidays-dev.github.io'
   branch: master
   site_domain: mobidays-dev.netlify.com
