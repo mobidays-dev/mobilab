@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: mobidays-dev/mobidays-dev.github.io
+  repo: 'mobidays-dev/mobidays-dev.github.io'
   branch: master
-#  site_domain: mobidays-dev.netlify.com
+  site_domain: mobidays-dev.netlify.com
 
 publish_mode: editorial_workflow
 display_url: https://mobidays-dev.netlify.com/
