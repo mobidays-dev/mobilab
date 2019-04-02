@@ -1,4 +1,4 @@
 ---
-name: research
-title: '리서치'
+title: research
+name: '리서치'
 ---

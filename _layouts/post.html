@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign author = site.authors | where: 'name', page.author | first %}
+{% assign author = site.authors | where: 'title', page.author | first %}
 <div id="cover" class="container"
      {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
     <div>
@@ -9,8 +9,8 @@ layout: default
         <p style="color:white !important;">
           {{ page.date  | date: '%Y/%m/%d' }}&nbsp;by
           <b style="font-size:11px;">
-            <a href="/authors/{{ author.name }}" >
-              {{ author.name }}
+            <a href="/authors/{{ author.title }}" >
+              {{ author.title }}
             </a>
           </b>
         </p>
@@ -36,10 +36,10 @@ layout: default
 
         <a id="post-author" href="{{ author.url }}">
             <div id="author-image" style="background-image:url({{ author.image | default: '' }});">
-                <span class="sr-only">{{ author.name }}'s avartar</span>
+                <span class="sr-only">{{ author.title }}'s avartar</span>
             </div>
             <p id="author-name" style="font-weight:bold;">
-              {{ author.name }}
+              {{ author.title }}
                 {% if author.email %}
                 <b style="font-size:11px;">
                   &#60;{{ author.email }}&#62;

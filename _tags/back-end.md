@@ -1,4 +1,4 @@
 ---
-name: back-end
-title: 'Back-End; 서버개발'
+title: back-end
+name: 'Back-End; 서버개발'
 ---

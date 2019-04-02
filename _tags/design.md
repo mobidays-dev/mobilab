@@ -1,4 +1,4 @@
 ---
-name: aws
-title: 'AWS: Amazon Web Service'
+title: aws
+name: 'AWS: Amazon Web Service'
 ---

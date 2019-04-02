@@ -1,4 +1,4 @@
 ---
-name: mobile
-title: '모바일 (mobile)'
+title: mobile
+name: '모바일 (mobile)'
 ---

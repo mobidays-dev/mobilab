@@ -1,4 +1,4 @@
 ---
-name: marketing
-title: '마케팅(marketing)'
+title: marketing
+name: '마케팅(marketing)'
 ---

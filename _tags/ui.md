@@ -1,4 +1,4 @@
 ---
-name: ui
-title: 'User Interface'
+title: ui
+name: 'User Interface'
 ---

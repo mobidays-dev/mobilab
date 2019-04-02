@@ -1,4 +1,4 @@
 ---
-name: ux
-title: 'User Experience Design'
+title: ux
+name: 'User Experience Design'
 ---

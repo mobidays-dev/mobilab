@@ -1,4 +1,4 @@
 ---
-name: web
-title: '웹'
+title: web
+name: '웹'
 ---

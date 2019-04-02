@@ -10,10 +10,10 @@ layout: default
             <span class="sr-only">{{ page.name }}'s avartar</span>
         </div>
         <div>
-            <h1>{{ page.title | default: page.name }}
-              {% if page.name and page.title != page.name %}
+            <h1>{{ page.name | default: page.title }}
+              {% if page.name and page.name != page.title %}
               <b style="font-size:11px;">
-                &#40;{{ page.name }}&#41;
+                &#40;{{ page.title }}&#41;
               </b>
               {% endif %}
             </h1>
@@ -25,7 +25,7 @@ layout: default
 
 
 <div id="navbar" class="container">
-    <h5>&nbsp;{{ page.title | default: page.name }}'s Posts</h5>
+    <h5>&nbsp;{{ page.name | default: page.title }}'s Posts</h5>
 </div>
 
 <div id="content" class="container">

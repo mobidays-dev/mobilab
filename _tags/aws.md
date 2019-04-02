@@ -1,4 +1,4 @@
 ---
-name: ec2
-title: 'Amazon EC2'
+title: ec2
+name: 'Amazon EC2'
 ---

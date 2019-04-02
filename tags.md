@@ -6,5 +6,5 @@ sitemap:
   priority: 0.7
 ---
 {% for tag in site.tags %}
-* [{{ tag.name }}]({{ site.baseurl }}/tags/{{ tag.name }})
+* [{{ tag.title }}]({{ site.baseurl }}/tags/{{ tag.title }})
 {% endfor %}

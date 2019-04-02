@@ -1,4 +1,4 @@
 ---
-name: trend
-title: '트랜드'
+title: trend
+name: '트랜드'
 ---

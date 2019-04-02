@@ -44,10 +44,13 @@ collections:
         required: false
       - label: "태그"
         name: "tags"
-        widget: "list"
-        allow_add: true
+        widget: "relation"
+        collection: "tags"
+        searchFields: [title]
+        valueField: "title"
+        displayFields: ["title"]
+        multiple: true
         required: false
-        # default: []
       - {label: "노출여부", name: "published", widget: "boolean", default: false }
       - {label: "포스트", name: "body", widget: "markdown"}
 
@@ -70,9 +73,9 @@ collections:
         name: "author"
         widget: "relation"
         collection: "authors"
-        searchFields: ["name", "title"]
-        valueField: "name"
-        displayFields: ["name", "title"]
+        searchFields: ["title", "name"]
+        valueField: "title"
+        displayFields: ["title", "name"]
         default: "dev"
       - {label: "작성일자", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
@@ -103,8 +106,8 @@ collections:
       preview: false
     slug: "{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "닉네임", name: "name", widget: "string"}
-      - {label: "이름", name: "title", widget: "string", required: false }
+      - {label: "닉네임", name: "title", widget: "string"}
+      - {label: "이름", name: "name", widget: "string", required: false }
       - {label: "이메일", name: "email", widget: "string",  required: false }
       - {label: "짧은 소개", name: "desc", widget: "string",  required: false }
       - {label: "아바타", name: "image", widget: "string", default: "/static/authors/default.png"}
@@ -118,5 +121,5 @@ collections:
       preview: false
     slug: "{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "태그명 {{slug}}", name: "name", widget: "string"}
-      - {label: "태그설명", name: "title", widget: "text", required: false }
+      - {label: "태그명", name: "title", widget: "string"}
+      - {label: "태그설명", name: "name", widget: "text", required: false }

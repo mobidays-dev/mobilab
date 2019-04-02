@@ -1,4 +1,4 @@
 ---
-name: prototyping
-title: '프로토타이핑'
+title: prototyping
+name: '프로토타이핑'
 ---
