@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "https://mobidays-dev.netlify.com/*"
+  to = "https://lab.mobidays.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://mobidays-dev.netlify.com/*"
+  to = "http://lab.mobidays.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://lab.mobidays.com/*"
+  to = "https://lab.mobidays.com/:splat"
+  status = 301
+  force = true
