@@ -54,8 +54,8 @@ collections:
       - {label: "노출여부", name: "published", widget: "boolean", default: false }
       - {label: "포스트", name: "body", widget: "markdown"}
 
-  - name: "post" # Used in routes, e.g. /admin/collections/blog
-    label: "Posts" # Used in the UI
+  - name: "posts" # Used in routes, e.g. /admin/collections/blog
+    label: "Post" # Used in the UI
     label_singular: "Post" # Used in the UI, ie: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
     filter:
