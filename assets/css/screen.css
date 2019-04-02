@@ -1,5 +1,9 @@
 /* common */
 
+#taboola-livere,#livereAd{
+  display: none;
+}
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -301,7 +305,7 @@ for small screen(<720px):
 }
 
 #wrapper {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background-color: #eaeaf2;
     overflow-x: scroll; /* @@iolo for very long title/tags */
 }

@@ -1,13 +1,16 @@
 <!--댓글-->
+
 <div class="reply">
-  <div class="livere-close"></div>
+ <div class="livere-close"></div>
   <!-- 라이브리 시티 설치 코드 -->
-  <div id="lv-container" data-id="city" data-uid="MTAyMC8zODQ2Mi8xNDk5MA==">
+ <div id="lv-container" data-id="city" data-uid="MTAyMC8zODQ2Mi8xNDk5MA==" style="margin-top:-306px;">
     <script type="text/javascript">
+
       /* livere api의 경우 refer를 KEY로 하여 댓글을 받아옴
        * (http:// 제외 필요) https://livere.com 2017/12/15 - byn
        */
-      var content_id = location.href.replace('https://', '');
+      var content_id = location.href.substr(location.href.indexOf("//")+2);
+
       window.livereOptions = {
         refer: content_id
       };
@@ -23,6 +26,7 @@
         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
         j.async = true;
         e.parentNode.insertBefore(j, e);
+        console.log(document.getElementById("livereAd"));
       })(document, 'script');
     </script>
   </div>
