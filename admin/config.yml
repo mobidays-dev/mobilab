@@ -2,10 +2,10 @@ backend:
   name: github
   repo: mobidays-dev/mobidays-dev.github.io
   branch: master
-  site_domain: mobidays-dev.netlify.com
+  site_domain: lab.mobidays.com
 
 # publish_mode: editorial_workflow
-display_url: lab.mobidays.com
+display_url: https://lab.mobidays.com
 media_folder: "static/images"
 # public_folder: "/public/"
 
@@ -18,8 +18,7 @@ collections:
       field: "published"
       value: false
     description: >
-      The description is a great place for tone setting, high level information, and editing
-      guidelines that are specific to a collection.
+      드래프트로 일단 글을 완성하고, 완성되면 PUBLISH하시면 글 노출이 시작됩니다.
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -59,9 +58,9 @@ collections:
       field: "published"
       value: true
     description: >
-      The description is a great place for tone setting, high level information, and editing
-      guidelines that are specific to a collection.
-    create: true # Allow users to create new documents in this collection
+      퍼블리싱된 글을 확인하고 수정할 수 있습니다.
+      새 글 작성은 Draft를 먼저 이용해 주세요.
+    create: false # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
@@ -107,7 +106,7 @@ collections:
       - {label: "이름", name: "title", widget: "string", required: false }
       - {label: "이메일", name: "email", widget: "string",  required: false }
       - {label: "짧은 소개", name: "desc", widget: "string",  required: false }
-      - {label: "아바타", name: "image", widget: "image", default: "/static/authors/default.png"}
+      - {label: "아바타", name: "image", widget: "string", default: "/static/authors/default.png"}
 
   - name: "tags" # Used in routes, e.g. /admin/collections/blog
     label: "Tag" # Used in the UI
