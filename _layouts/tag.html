@@ -4,20 +4,20 @@ layout: default
 <div id="cover" class="container"
      {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
     <div>
-        <h1>{{ page.title | default: page.name }}</h1>
-        <p>All Posts with <strong>#{{ page.name }}</strong></p>
+        <h1>{{ page.name | default: page.title }}</h1>
+        <p>All Posts with <strong>#{{ page.title }}</strong></p>
     </div>
 </div>
 
 <div id="navbar" class="container">
-    <h5>&nbsp;#{{ page.name }}</h5>
+    <h5>&nbsp;#{{ page.title }}</h5>
 </div>
 
 <div id="content" class="container">
     <div id="tag-content" role="main">
         <ul id="post-list">
             {% for post in site.posts %}
-                {% if post.tags contains page.name %}
+                {% if post.tags contains page.title %}
                     {% include item.html %}
                 {% endif %}
             {% endfor %}

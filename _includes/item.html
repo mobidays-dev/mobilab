@@ -10,7 +10,7 @@
         {% endfor %}
     </p>
     <div class="post-meta">
-        {% assign author = site.authors | where: 'name', post.author | first %}
+        {% assign author = site.authors | where: 'title', post.author | first %}
         <a href="{{ site.baseurl }}/authors/{{ post.author }}">
             <div class="author-image"
                  {% if author.image %}style="background-image:url({{ author.image }});"{% endif %}>
