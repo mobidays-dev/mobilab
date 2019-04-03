@@ -27,9 +27,9 @@
         var image = entry.getIn([ 'data', 'image' ]);
         var bg = this.props.getAsset(image) || '/assets/images/default_blog_cover.jpg';
         var author = entry.getIn([ 'data', 'author' ]) || 'dev';
-  
-        var coverLink = this.props.widgetsFor('cover').getIn(['data', 'link'] || '';
-        var coverTitle = this.props.widgetsFor('cover').getIn(['data', 'title'] || '';
+
+        var coverLink = this.props.widgetsFor('cover').getIn(['data', 'link']) || '';
+        var coverTitle = this.props.widgetsFor('cover').getIn(['data', 'title']) || '';
         var date = entry.getIn([ 'data', 'date' ]) || '';
         date = date.split(' ')[0].replace(/-/gi,'/');
 
