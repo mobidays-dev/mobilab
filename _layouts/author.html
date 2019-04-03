@@ -7,6 +7,7 @@ layout: default
     <div>
         <div id="cover-author-image"
              {% if page.image %}style="background-image:url({{ page.image }});"{% endif %}>
+            <span class="sr-only">{{ page.name }}'s avartar</span>
         </div>
         <div>
             <h1>{{ page.name | default: page.title }}

@@ -96,7 +96,9 @@
         return h('div', { id: 'wrapper' },
             h('div', { id: 'cover', 'className': 'container', style: { 'background-image': 'url('+ bg.toString() +')' } },
                 h('div', {},
-                    h('div', { id: 'cover-author-image', style: { 'background-image': 'url('+ thumbnail.toString() +')' } } ),
+                    h('div', { id: 'cover-author-image', style: { 'background-image': 'url('+ thumbnail.toString() +')' } },
+                      h('span',{ 'className': 'sr-only' }, entry.getIn([ 'data', 'title' ] )
+                    ),
                     h('div', {},
                         h('h1', {}, entry.getIn([ 'data', 'name' ]) || entry.getIn([ 'data', 'title' ]),
                             h('b', { style: { 'font-size': '11px' } }, authorSubName)
@@ -106,18 +108,22 @@
 
                 )
             ),
+            h('br', {} ),
             h('hr', {} ),
             h('div', { id: 'content', 'className': 'container post', role: 'main' },
                 h('div', { id: 'post-footer' },
                     h('a', { id: 'post-author' },
-                        h('div', { id: 'author-image', style: { 'background-image': 'url('+ thumbnail.toString() +')' } } ),
+                        h('div', { id: 'author-image', style: { 'background-image': 'url('+ thumbnail.toString() +')' } },
+                            h('span',{ 'className': 'sr-only' }, entry.getIn([ 'data', 'title' ] )
+                        ),
                         h('p', { id: 'author-name', style: { 'font-weight': 'bold' } }, entry.getIn([ 'data', 'title' ]),
                             h('b', { style: { 'font-size': '11px' } }, authorEmail )
                         )
 
                     )
                 )
-            )
+            ),
+            h('hr', {} )
          );
       }
     });
