@@ -1,5 +1,5 @@
 [[redirects]]
   from = "https://mobidays-dev.netlify.com/*"
-  to = "https://lab.mobidays.com/:splat"
+  to = "https://mobilab.mobidays.com/:splat"
   status = 301
   force = true
