@@ -41,10 +41,10 @@
             ),
             h('div', { id: 'content', 'className': 'container post', role: 'main' },
                 h('div', { id: 'post-content' },
-                    h('p', { }, 
+                    h('p', { },
                         this.props.widgetsFor('tags').map(function(tag, index) {
                           console.log(tag);
-                          console.log(tag.getIn(['data', 'title']))
+                          console.log(tag.entry.getIn(['data', 'title']))
                           return h('a', { key: index, href: '/tags/'+tag.getIn(['data', 'title'])},
                             '#'+tag.getIn(['data', 'title'])
                           );
