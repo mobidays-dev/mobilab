@@ -39,9 +39,9 @@
                 h('div', {},
                     h('h1',{},entry.getIn(['data', 'title'])),
 
-                    h('p',{style:'color:white !important;'},entry.getIn(['data', 'date']),
+                    h('p',{},entry.getIn(['data', 'date']),
                         h('b',{},
-                            h('a',{},entry.getIn(['data', 'author']))
+                            h('a',{href:"/authors/"+entry.getIn(['data', 'author'])},entry.getIn(['data', 'author']))
                         )
                     )
 
@@ -51,6 +51,9 @@
       }
     });
     /*
+
+style :{ color:“red”}
+
     h('div', {},
         h('div', {id:'cover',class:'container'},
             h('div', {},
