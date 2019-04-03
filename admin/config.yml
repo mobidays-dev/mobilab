@@ -33,16 +33,16 @@ collections:
         valueField: "title"
         displayFields: ["title", "name"]
         default: "dev"
-        hint: "본인이 없으실 경우, Author 메뉴에서 등록 후 사용해 주세요 :)"
+        hint: "Author 메뉴에서 글쓴이 등록 후 사용해 주세요. :)"
       - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm", dateFormat:true}
       - {label: "커버이미지 ", name: "image", widget: "image", required: false }
-      #- label: "커버이미지 출처"
-      #  name: "cover"
-      #  widget: "object"
-      #  fields:
-      #      - {label: "이미지 출처", name: "title", widget: "string", required: false }
-      #      - {label: "이미지 출처 URL", name: "link", widget: "string", required: false }
-      #  required: false
+    # - label: "커버이미지 출처"
+    #   name: "cover"
+    #   widget: "object"
+    #   fields:
+    #        - {label: "이미지 출처", name: "title", widget: "string", required: false }
+    #        - {label: "이미지 출처 URL", name: "link", widget: "string", required: false }
+    #   required: false
       - label: "태그"
         name: "tags"
         widget: "relation"
@@ -79,16 +79,16 @@ collections:
         valueField: "title"
         displayFields: ["title", "name"]
         default: "dev"
-        hint: "본인이 없으실 경우, Author 메뉴에서 등록 후 사용해 주세요 :)"
+        hint: "Author 메뉴에서 등록 후 사용해 주세요 :)"
       - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm", dateFormat:true}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
-      #- label: "커버이미지 출처"
-      #  name: "cover"
-      #  widget: "object"
-      #  fields:
-      #      - {label: "이미지 출처", name: "title", widget: "string", required: false }
-      #      - {label: "이미지 출처 URL", name: "link", widget: "string", required: false }
-      #  required: false
+    # - label: "커버이미지 출처"
+    #   name: "cover"
+    #   widget: "object"
+    #   fields:
+    #        - {label: "이미지 출처", name: "title", widget: "string", required: false }
+    #        - {label: "이미지 출처 URL", name: "link", widget: "string", required: false }
+    #   required: false
       - label: "태그"
         name: "tags"
         widget: "relation"
