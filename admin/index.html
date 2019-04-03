@@ -26,6 +26,8 @@
         var entry = this.props.entry;
         var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);
+        console.log(entry.getIn(['data', 'author'])
+        var author = entry.getIn(['data', 'author']).title;
   // /assets/images/default_blog_cover.jpg
         return
 
@@ -35,7 +37,7 @@
                     h('h1',{},entry.getIn(['data', 'title'])),
                     h('p',{style:'color:white !important;'},entry.getIn(['data', 'date']),
                         h('b',{style:"font-size:11px;"},
-                            h('a',{href:"/authors/"+entry.getIn(['data', 'author']).title},entry.getIn(['data', 'author']).title)
+                            h('a',{href:"/authors/"+author},author)
                         )
                     )
                 )
@@ -46,7 +48,7 @@
     });
     /*
     h('div', {},
-        h('div', {id:'cover',class:'container'}),
+        h('div', {id:'cover',class:'container'},
             h('div', {},
                 h('h1',{},entry.getIn(['data', 'title'])),
                 h('p',{style:'color:white !important;'},entry.getIn(['data', 'date']),
@@ -57,6 +59,8 @@
             )
         )
      );
+
+  }
      */
     /*
     <body class="post-template">
