@@ -34,7 +34,7 @@
                     h('h1', {}, entry.getIn([ 'data', 'title' ]) ),
                     h('p', { style:{ 'color': 'white !important' } }, entry.getIn([ 'data', 'date' ]),
                         h('b', { style: { 'font-size': '11px' } },
-                            h('a', { href: '/authors/' + author }, authors )
+                            h('a', { href: '/authors/' + author }, author )
                         )
                     )
                 )
