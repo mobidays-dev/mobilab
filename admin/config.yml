@@ -30,7 +30,7 @@ collections:
         widget: "relation"
         collection: "authors"
         searchFields: ["name", "title"]
-        valueField: "name"
+        valueField: "title"
         displayFields: ["name", "title"]
         default: "dev"
       - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}

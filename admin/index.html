@@ -20,37 +20,55 @@
     CMS.registerPreviewStyle("https://mobidays-dev.netlify.com/assets/css/monokai.css");
     CMS.registerPreviewStyle("https://mobidays-dev.netlify.com/assets/lib/magnific-popup.min.css");
     CMS.registerPreviewStyle("https://mobidays-dev.netlify.com/assets/css/screen.css");
-/*
-  h('div', [h('h2', 'Hello')]);
-  h('div#foo.bar.baz', [h('h2', 'Hello')]);
-  h('div.bar.baz', [h('h2', 'Hello')]);
-  h('div', {className: 'greeting'}, [h('h2', 'Hello')]);
-*/
-/* /assets/images/default_blog_cover.jpg*/
 
     var PostPreview = createClass({
       render: function() {
         var entry = this.props.entry;
-        var image = entry.getIn(['data', 'image']);
-        var bg = this.props.getAsset(image);
+        var image = entry.getIn([ 'data', 'image' ]);
+        var bg = this.props.getAsset(image) || '/assets/images/default_blog_cover.jpg';
+        var author = entry.getIn([ 'data', 'author' ]) || 'dev';
 
-        return h('div', {id:'wrapper'},
-            h('div', {id:'cover','className':'container',style:{'background-image':'url('+ bg.toString() +')'}},
+        return h('div', { id: 'wrapper' },
+            h('div', { id: 'cover', 'className': 'container', style: { 'background-image':'url('+ bg.toString() +')' } },
                 h('div', {},
-                    h('h1',{},entry.getIn(['data', 'title'])),
-
-                    h('p',{style:{'color':'white !important'}},entry.getIn(['data', 'date']),
-                        h('b',{style:{'font-size':'11px'}},
-                            h('a',{href:"/authors/"+entry.getIn(['data', 'author'])},entry.getIn(['data', 'author']))
+                    h('h1', {}, entry.getIn([ 'data', 'title' ]) ),
+                    h('p', { style:{ 'color': 'white !important' } }, entry.getIn([ 'data', 'date' ]),
+                        h('b', { style: { 'font-size': '11px' } },
+                            h('a', { href: '/authors/' + author }, authors )
                         )
                     )
-
                 )
-            )
+            ),
+            h('div', { id: 'content', 'className': 'container post', role: 'main' },
+                h('div', { id: 'post-content' },
+                    h('p', { }, entry.getIn([ 'data', 'date' ]),
+                        this.props.widgetsFor('tags').map(function(tag, index) {
+                          return h('a', { key: index, href: '/tags/'+tag.getIn(['data', 'title'])},
+                            '#'+tag.getIn(['data', 'title'])
+                          );
+                        })
+                    ),
+                    this.props.widgetFor('body')
+                )
+            ),
          );
       }
     });
+
+
+
     /*
+
+    <div id="content" class="container post" role="main">
+        <div id="post-content">
+          <p>
+              {% for tag in page.tags %}
+                  <a href="{{ site.baseurl }}/tags/{{ tag }}" class="tag">#{{ tag }}</a>
+              {% endfor %}
+          </p>
+          {{ content }}
+        </div>
+
 
     h('div', {},
         h('div', {id:'cover',class:'container'},
