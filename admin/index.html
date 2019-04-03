@@ -37,20 +37,27 @@
 
   // /assets/images/default_blog_cover.jpg
         return
+        h('div#wrapper', {},
+      h('h1', {}, entry.getIn(['data', 'title'])),
+      h('img', {src: bg.toString()}),
+      h('div', {"className": "text"}, this.props.widgetFor('body'))
+    );
+    /*
         h('div', {},
             h('div#cover.container', {},
                 h('div', {},
                     h('h1',{},entry.getIn(['data', 'title']))
-                    /*
+
                     h('p',{},entry.getIn(['data', 'date']),
                         h('b',{},
                             h('a',{},entry.getIn(['data', 'author']))
                         )
                     )
-                    */
+
                 )
             )
          );
+         */
       }
     });
     /*
