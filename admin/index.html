@@ -33,20 +33,21 @@
         var entry = this.props.entry;
         var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);
-        console.log(entry.getIn(['data', 'author']));
-          console.log(entry.getIn(['data', 'author']).title);
+
 
   // /assets/images/default_blog_cover.jpg
         return
         h('div', {},
             h('div#cover.container', {},
                 h('div', {},
-                    h('h1',{},entry.getIn(['data', 'title'])),
+                    h('h1',{},entry.getIn(['data', 'title']))
+                    /*
                     h('p',{},entry.getIn(['data', 'date']),
                         h('b',{},
                             h('a',{},entry.getIn(['data', 'author']))
                         )
                     )
+                    */
                 )
             )
          );
