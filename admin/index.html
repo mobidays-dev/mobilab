@@ -34,8 +34,8 @@
         var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);
 
-        return h('div', {},
-            h('div', {},
+        return h('div', {id:'wrapper'},
+            h('div', {id:'cover','className':'container'},
                 h('div', {},
                     h('h1',{},entry.getIn(['data', 'title'])),
 
