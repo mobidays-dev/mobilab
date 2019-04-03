@@ -20,6 +20,13 @@
     CMS.registerPreviewStyle("https://mobidays-dev.netlify.com/assets/css/monokai.css");
     CMS.registerPreviewStyle("https://mobidays-dev.netlify.com/assets/lib/magnific-popup.min.css");
     CMS.registerPreviewStyle("https://mobidays-dev.netlify.com/assets/css/screen.css");
+/*
+  h('div', [h('h2', 'Hello')]);
+  h('div#foo.bar.baz', [h('h2', 'Hello')]);
+  h('div.bar.baz', [h('h2', 'Hello')]);
+  h('div', {className: 'greeting'}, [h('h2', 'Hello')]);
+*/
+
 
     var PostPreview = createClass({
       render: function() {
@@ -27,14 +34,22 @@
         var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);
         console.log(entry.getIn(['data', 'author']));
-        var author = entry.getIn(['data', 'author']).title;
+          console.log(entry.getIn(['data', 'author']).title);
+
   // /assets/images/default_blog_cover.jpg
         return
         h('div', {},
-          h('div', {id:"content","className": "container post"},
-            this.props.widgetFor('body'))
-          
-       );
+            h('div#cover.container', {},
+                h('div', {},
+                    h('h1',{},entry.getIn(['data', 'title'])),
+                    h('p',{style:'color:white !important;'},entry.getIn(['data', 'date']),
+                        h('b',{style:"font-size:11px;"},
+                            h('a',{href:"/authors/"+entry.getIn(['data', 'author'])},entry.getIn(['data', 'author']))
+                        )
+                    )
+                )
+            )
+         );
       }
     });
     /*
