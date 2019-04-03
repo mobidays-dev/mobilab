@@ -26,7 +26,7 @@
   h('div.bar.baz', [h('h2', 'Hello')]);
   h('div', {className: 'greeting'}, [h('h2', 'Hello')]);
 */
-
+/* /assets/images/default_blog_cover.jpg*/
 
     var PostPreview = createClass({
       render: function() {
@@ -34,16 +34,7 @@
         var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);
 
-
-  // /assets/images/default_blog_cover.jpg
-        return
-        h('div', {},
-      h('h1', {}, entry.getIn(['data', 'title'])),
-      h('img', {src: bg.toString()}),
-      h('div', {"className": "text"}, this.props.widgetFor('body'))
-    );
-    /*
-        h('div', {},
+        return h('div', {},
             h('div#cover.container', {},
                 h('div', {},
                     h('h1',{},entry.getIn(['data', 'title']))
@@ -57,7 +48,6 @@
                 )
             )
          );
-         */
       }
     });
     /*
