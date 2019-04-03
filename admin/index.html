@@ -62,27 +62,6 @@
          );
       }
     });
-/*
-    <div id="cover" class="container"
-         {% if page.cover %}style="background-image: url({{ page.cover }});"{% endif %}>
-        <div>
-            <div id="cover-author-image"
-                 {% if page.image %}style="background-image:url({{ page.image }});"{% endif %}>
-                <span class="sr-only">{{ page.name }}'s avartar</span>
-            </div>
-            <div>
-                <h1>{{ page.name | default: page.title }}
-                  {% if page.name and page.name != page.title %}
-                  <b style="font-size:11px;">
-                    &#40;{{ page.title }}&#41;
-                  </b>
-                  {% endif %}
-                </h1>
-            </div>
-            <p style="padding-top:1px;">{{ page.desc }}</p>
-        </div>
-    </div>
-*/
 
     var AuthorPreview = createClass({
       render: function() {
@@ -119,7 +98,8 @@
                             h('b', { style: { 'font-size': '11px' } }, authorEmail )
                         )
 
-                    )
+                    ),
+                    h('p', { id: 'post-date' }, entry.getIn([ 'data', 'desc' ]) )
                 )
             ),
             h('hr', {} )
