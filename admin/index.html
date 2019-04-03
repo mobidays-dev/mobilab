@@ -30,20 +30,11 @@
         var author = entry.getIn(['data', 'author']).title;
   // /assets/images/default_blog_cover.jpg
         return
-
         h('div', {},
-            h('div', {id:'cover',class:'container'},
-                h('div', {},
-                    h('h1',{},entry.getIn(['data', 'title'])),
-                    h('p',{style:'color:white !important;'},entry.getIn(['data', 'date']),
-                        h('b',{style:"font-size:11px;"},
-                            h('a',{href:"/authors/"+author},author)
-                        )
-                    )
-                )
-            )
-         );
-
+          h('div', {id:"content","className": "container post"}
+            h('div',{id:"post-content"}, this.props.widgetFor('body'))
+          )
+       );
       }
     });
     /*
