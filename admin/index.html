@@ -97,15 +97,14 @@
             h('div', { id: 'cover', 'className': 'container', style: { 'background-image': 'url('+ bg.toString() +')' } },
                 h('div', {},
                     h('div', { id: 'cover-author-image', style: { 'background-image': 'url('+ thumbnail.toString() +')' } },
-                      h('span',{ 'className': 'sr-only' }, entry.getIn([ 'data', 'title' ] )
+                        h('span', { 'className': 'sr-only' }, entry.getIn([ 'data', 'title' ]) )
                     ),
                     h('div', {},
                         h('h1', {}, entry.getIn([ 'data', 'name' ]) || entry.getIn([ 'data', 'title' ]),
-                            h('b', { style: { 'font-size': '11px' } }, authorSubName)
+                            h('b', { style: { 'font-size': '11px' } }, authorSubName )
                         )
                     ),
-                    h('p', { style: { 'padding-top': '1px' } }, entry.getIn([ 'data', 'desc' ]))
-
+                    h('p', { style: { 'padding-top': '1px' } }, entry.getIn([ 'data', 'desc' ]) )
                 )
             ),
             h('br', {} ),
@@ -114,7 +113,7 @@
                 h('div', { id: 'post-footer' },
                     h('a', { id: 'post-author' },
                         h('div', { id: 'author-image', style: { 'background-image': 'url('+ thumbnail.toString() +')' } },
-                            h('span',{ 'className': 'sr-only' }, entry.getIn([ 'data', 'title' ] )
+                            h('span', { 'className': 'sr-only' }, entry.getIn([ 'data', 'title' ]) )
                         ),
                         h('p', { id: 'author-name', style: { 'font-weight': 'bold' } }, entry.getIn([ 'data', 'title' ]),
                             h('b', { style: { 'font-size': '11px' } }, authorEmail )
@@ -128,30 +127,6 @@
       }
     });
 
-    /*
-    <div id="post-footer">
-
-        <a id="post-author" href="{{ author.url }}">
-            <div id="author-image" style="background-image:url({{ author.image | default: '' }});">
-                <span class="sr-only">{{ author.title }}'s avartar</span>
-            </div>
-            <p id="author-name" style="font-weight:bold;">
-              {{ author.title }}
-                {% if author.email %}
-                <b style="font-size:11px;">
-                  &#60;{{ author.email }}&#62;
-                </b>
-                {% endif %}
-            </p>
-        </a>
-        <p id="post-date">
-          {{ author.desc }}
-        </p>
-        <a id="post-more" href="{{ author.url }}">
-            <span>More posts by this author</span>
-        </a>
-    </div>
-*/
     CMS.registerPreviewTemplate("posts", PostPreview);
     CMS.registerPreviewTemplate("drafts", PostPreview);
 
@@ -159,6 +134,7 @@
 
 
   </script>
+
 </body>
 
 </html>
