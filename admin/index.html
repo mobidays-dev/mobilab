@@ -42,9 +42,9 @@
             h('div#cover.container', {},
                 h('div', {},
                     h('h1',{},entry.getIn(['data', 'title'])),
-                    h('p',{style:'color:white !important;'},entry.getIn(['data', 'date']),
-                        h('b',{style:"font-size:11px;"},
-                            h('a',{href:"/authors/"+entry.getIn(['data', 'author'])},entry.getIn(['data', 'author']))
+                    h('p',{},entry.getIn(['data', 'date']),
+                        h('b',{},
+                            h('a',{},entry.getIn(['data', 'author']))
                         )
                     )
                 )
