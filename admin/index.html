@@ -25,7 +25,8 @@
       render: function() {
         var entry = this.props.entry;
         var image = entry.getIn([ 'data', 'image' ]);
-        var bg = this.props.getAsset(image) || '/assets/images/default_blog_cover.jpg';
+        // var bg = this.props.getAsset(image) || '/assets/images/default_blog_cover.jpg';
+        var bg = this.props.getAsset(image) || '';
         var author = entry.getIn([ 'data', 'author' ]) || 'dev';
 
         var coverLink = this.props.widgetsFor('cover').getIn(['data', 'link']) || '';
