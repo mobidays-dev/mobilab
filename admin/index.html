@@ -34,7 +34,7 @@
         date = date.split(' ')[0].replace(/-/gi,'/');
 
         return h('div', { id: 'wrapper' },
-            h('div', { id: 'cover', 'className': 'container', style: { 'background-image':'url('+ bg.toString() +')' } },
+            h('div', { id: 'cover', 'className': 'container', style: { 'background-image': 'url('+ bg.toString() +')' } },
                 h('div', {},
                     h('h1', {}, entry.getIn([ 'data', 'title' ]) ),
                     h('p', { style:{ 'color': 'white !important' } }, date, ' by ',
@@ -62,10 +62,65 @@
          );
       }
     });
+/*
+    <div id="cover" class="container"
+         {% if page.cover %}style="background-image: url({{ page.cover }});"{% endif %}>
+        <div>
+            <div id="cover-author-image"
+                 {% if page.image %}style="background-image:url({{ page.image }});"{% endif %}>
+                <span class="sr-only">{{ page.name }}'s avartar</span>
+            </div>
+            <div>
+                <h1>{{ page.name | default: page.title }}
+                  {% if page.name and page.name != page.title %}
+                  <b style="font-size:11px;">
+                    &#40;{{ page.title }}&#41;
+                  </b>
+                  {% endif %}
+                </h1>
+            </div>
+            <p style="padding-top:1px;">{{ page.desc }}</p>
+        </div>
+    </div>
+*/
+
+    var AuthorPreview = createClass({
+      render: function() {
+        var entry = this.props.entry;
+        var image = entry.getIn([ 'data', 'image' ]);
+        var thumbnail = this.props.getAsset(image) || '/static/authors/default.png';
+        var bg = '/assets/images/default_blog_cover.jpg';
+        var authorSubName = (entry.getIn([ 'data', 'name' ])!=entry.getIn([ 'data', 'title' ]))?'('+entry.getIn([ 'data', 'title' ])+')':'';
+
+
+        var coverLink = this.props.widgetsFor('cover').getIn(['data', 'link']) || '';
+        var coverTitle = this.props.widgetsFor('cover').getIn(['data', 'title']) || '';
+        var date = entry.getIn([ 'data', 'date' ]) || '';
+        date = date.split(' ')[0].replace(/-/gi,'/');
+
+        return h('div', { id: 'wrapper' },
+            h('div', { id: 'cover', 'className': 'container', style: { 'background-image': 'url('+ bg.toString() +')' } },
+                h('div', {},
+                    h('div', { id: 'cover-author-image', style: { 'background-image': 'url('+ thumbnail.toString() +')' } } ),
+                    h('div', {},
+                        h('h1', {}, entry.getIn([ 'data', 'name' ]) || entry.getIn([ 'data', 'title' ]),
+                            h('b', { style: { 'font-size': '11px' } }, authorSubName)
+                        )
+                    ),
+                    h('p', { style: { 'padding-top': '1px' } }, entry.getIn([ 'data', 'desc' ]))
+
+                )
+            )
+         );
+      }
+    });
 
 
     CMS.registerPreviewTemplate("posts", PostPreview);
     CMS.registerPreviewTemplate("drafts", PostPreview);
+
+    CMS.registerPreviewTemplate("authors", AuthorPreview);
+
 
   </script>
 </body>
