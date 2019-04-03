@@ -19,7 +19,7 @@ collections:
       value: false
     description: >
       드래프트로 일단 글을 작성하고 [publish] 버튼으로 저장하세요 :)
-      글을 완성하셨다면 노출여부를 ON으로 변경하면 즉시 글이 노출됩니다.
+      글을 완성하셨다면 노출상태를 ON으로 변경하면 즉시 글이 노출됩니다.
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -53,8 +53,8 @@ collections:
         multiple: true
         required: false
         hint: "필요한 태그가 없을 경우, Tag 메뉴에서 등록 후 사용해 주세요 :)"
-      - {label: "노출여부", name: "published", widget: "boolean", default: false }
-      - {label: "포스트", name: "body", widget: "markdown"}
+      - {label: "노출상태", name: "published", widget: "boolean", default: false }
+      - {label: "게시글 내용", name: "body", widget: "markdown"}
 
   - name: "posts" # Used in routes, e.g. /admin/collections/blog
     label: "Post" # Used in the UI
@@ -99,8 +99,8 @@ collections:
         multiple: true
         required: false
         hint: "필요한 태그가 없을 경우, Tag 메뉴에서 등록 후 사용해 주세요 :)"
-      - {label: "노출여부", name: "published", widget: "boolean", default: true }
-      - {label: "포스트", name: "body", widget: "markdown"}
+      - {label: "노출상태", name: "published", widget: "boolean", default: true }
+      - {label: "게시글 내용", name: "body", widget: "markdown"}
     #meta:
     #  - {label: "SEO Description", name: "description", widget: "text"}
 
