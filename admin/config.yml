@@ -29,9 +29,9 @@ collections:
         name: "author"
         widget: "relation"
         collection: "authors"
-        searchFields: ["name", "title"]
+        searchFields: ["title", "name"]
         valueField: "title"
-        displayFields: ["name", "title"]
+        displayFields: ["title", "name"]
         default: "dev"
       - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm", dateFormat:true}
       - {label: "커버이미지 ", name: "image", widget: "image", required: false }
