@@ -35,12 +35,12 @@
         var bg = this.props.getAsset(image);
 
         return h('div', {id:'wrapper'},
-            h('div', {id:'cover','className':'container'},
+            h('div', {id:'cover','className':'container',style:{'background-image':'url('+ bg.toString() +')'}},
                 h('div', {},
                     h('h1',{},entry.getIn(['data', 'title'])),
 
-                    h('p',{},entry.getIn(['data', 'date']),
-                        h('b',{},
+                    h('p',{style:{'color':'white !important'}},entry.getIn(['data', 'date']),
+                        h('b',{style:{'font-size':'11px'}},
                             h('a',{href:"/authors/"+entry.getIn(['data', 'author'])},entry.getIn(['data', 'author']))
                         )
                     )
@@ -51,8 +51,6 @@
       }
     });
     /*
-
-style :{ color:“red”}
 
     h('div', {},
         h('div', {id:'cover',class:'container'},
