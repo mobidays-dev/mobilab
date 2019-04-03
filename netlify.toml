@@ -3,3 +3,9 @@
   to = "https://mobilab.mobidays.com/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://mobilab.mobidays.com/mainlist"
+  to = "https://mobilab.mobidays.com"
+  status = 301
+  force = true
