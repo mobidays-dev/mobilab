@@ -33,7 +33,7 @@ collections:
         valueField: "title"
         displayFields: ["name", "title"]
         default: "dev"
-      - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
+      - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm", dateFormat:true}
       - {label: "커버이미지 ", name: "image", widget: "image", required: false }
       - label: "커버이미지 출처"
         name: "cover"
@@ -77,7 +77,7 @@ collections:
         valueField: "title"
         displayFields: ["title", "name"]
         default: "dev"
-      - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm"}
+      - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm", dateFormat:true}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
       - label: "커버이미지 출처"
         name: "cover"

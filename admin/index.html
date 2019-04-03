@@ -32,7 +32,7 @@
             h('div', { id: 'cover', 'className': 'container', style: { 'background-image':'url('+ bg.toString() +')' } },
                 h('div', {},
                     h('h1', {}, entry.getIn([ 'data', 'title' ]) ),
-                    h('p', { style:{ 'color': 'white !important' } }, entry.getIn([ 'data', 'date' ]),
+                    h('p', { style:{ 'color': 'white !important' } }, entry.getIn([ 'data', 'date' ]), '&nbsp;by'
                         h('b', { style: { 'font-size': '11px' } },
                             h('a', { href: '/authors/' + author }, author )
                         )
@@ -43,10 +43,8 @@
                 h('div', { id: 'post-content' },
                     h('p', { },
                         this.props.widgetsFor('tags').map(function(tag, index) {
-                          console.log(tag);
-                          console.log(tag.entry.getIn(['data', 'title']))
-                          return h('a', { key: index, href: '/tags/'+tag.getIn(['data', 'title'])},
-                            '#'+tag.getIn(['data', 'title'])
+                          return h('a', { href: '/tags/'+tag.getIn(['data', 'name'])},
+                            '#', tag.getIn(['data', 'name'])
                           );
                         })
                     ),
