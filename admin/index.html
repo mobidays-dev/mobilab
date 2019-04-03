@@ -27,24 +27,37 @@
         var image = entry.getIn(['data', 'image']);
         var bg = this.props.getAsset(image);
   // /assets/images/default_blog_cover.jpg
-        return h('div', {id:'wrapper'},
-         h('div', {id:'cover',class:'container'}),
+        return
+
+        h('div', {},
+            h('div', {id:'cover',class:'container'},
+                h('div', {},
+                    h('h1',{},entry.getIn(['data', 'title'])),
+                    h('p',{style:'color:white !important;'},entry.getIn(['data', 'date']),
+                        h('b',{style:"font-size:11px;"},
+                            h('a',{href:"/authors/"+entry.getIn(['data', 'author']).title},entry.getIn(['data', 'author']).title)
+                        )
+                    )
+                )
+            )
+         );
+
+      }
+    });
+    /*
+    h('div', {},
+        h('div', {id:'cover',class:'container'}),
             h('div', {},
                 h('h1',{},entry.getIn(['data', 'title'])),
                 h('p',{style:'color:white !important;'},entry.getIn(['data', 'date']),
-                  h('b',{style:"font-size:11px;"},
-                    h('a',{href:"/authors/"+entry.getIn(['data', 'author'].title},entry.getIn(['data', 'author'].title)
-                  )
-                ),
+                    h('b',{style:"font-size:11px;"},
+                        h('a',{href:"/authors/"+entry.getIn(['data', 'author']).title},entry.getIn(['data', 'author']).title)
+                    )
+                )
             )
-
-         )
-
-          h('img', {src: bg.toString()}),
-          h('div', {"className": "text"}, this.props.widgetFor('body'))
-        );
-      }
-    });
+        )
+     );
+     */
     /*
     <body class="post-template">
     <div id="wrapper">
