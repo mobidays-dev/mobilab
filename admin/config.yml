@@ -33,7 +33,7 @@ collections:
         valueField: "title"
         displayFields: ["title", "name"]
         default: "dev"
-        hint: "[작성자] 메뉴에서 글쓴이 등록 후 사용해 주세요. :)"
+        hint: "<a href='#/collections/authors'>[작성자]</a> 메뉴에서 등록후 사용해주세요. :)"
       - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm", dateFormat:true}
       - {label: "커버이미지 ", name: "image", widget: "image", required: false }
       - label: "커버이미지 출처"
@@ -79,7 +79,7 @@ collections:
         valueField: "title"
         displayFields: ["title", "name"]
         default: "dev"
-        hint: "[작성자] 메뉴에서 등록 후 사용해 주세요 :)"
+        hint: "<a href='#/collections/authors'>[작성자]</a> 메뉴에서 등록후 사용해주세요. :)"
       - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm", dateFormat:true}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
       - label: "커버이미지 출처"
