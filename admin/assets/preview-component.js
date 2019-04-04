@@ -22,7 +22,7 @@ var mobi_preview = {
                       )
                   ),
 
-                  h('cite', {},'커버 이미지 출처: ',
+                  h('cite', {},(coverTitle || coverLink) ? '커버 이미지 출처: ' : '',
                       h('a', { href: coverLink, target: '_blank'}, coverTitle || coverLink )
                   )
 
