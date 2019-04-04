@@ -513,8 +513,10 @@ for small screen(<720px):
 #cover cite {
     display: block;
     position: absolute;
-    bottom: 1em;
-    right: 1em;
+    /* bottom: 1em; */
+    /* right: 1em; */
+    bottom:-90px;
+    left:0;
     font-size: 60%;
     color: #fff;
     overflow: hidden;
@@ -699,13 +701,15 @@ a.tag {
     padding: 0 10px;
     /* border: 1px solid #e6e6e6; */
     vertical-align: middle;
-    background:#f9f9f9;
+    /* background:#f9f9f9; */
     /* background-color: #fafafa; */
     border-radius: 8px;
     /* color: #1e1e1e; */
-    color:#b5b5b5;
+    /* color:#b5b5b5; */
     font-size: 12px;
     line-height: 24px; /* 24px = 26(height) - 2(border) */
+    background:#e4e4e4;
+    color: #8e8d8d;
 }
 
 a.tag:active,
@@ -1234,7 +1238,8 @@ body.author-template #cover p {
 }
 
 @media only screen and (min-width: 720px) and (max-width: 994px){
-    #header,#cover,#navbar{padding:0 5%;box-sizing: border-box;}
+    #header,#cover{padding:0 5%;box-sizing: border-box;}
+    #navbar{padding:15px 5%;}
     #search{right:6%;}
     #cover p{width:60%;}
 }
