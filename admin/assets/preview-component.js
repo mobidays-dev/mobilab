@@ -33,12 +33,13 @@ var mobi_preview = {
               h('div', { id: 'post-content' },
                   h('p', {},
                       this.props.widgetsFor('tags').map(function(tag, index) {
-                        console.log(tag)
-                        console.log(index)
-                        if(!tag) return '';
-                        return h('a', { 'className': 'tag', href: '/tags/'+tag.getIn([ 'data' ]) },
-                          '#', tag.getIn([ 'data' ])
-                        );
+                        if(tag){
+                          return h('a', { 'className': 'tag', href: '/tags/'+tag.getIn([ 'data' ]) },
+                            '#', tag.getIn([ 'data' ])
+                          );
+                        }else{
+                          return '';
+                        }
                       })
                   ),
                   this.props.widgetFor('body')
