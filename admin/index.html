@@ -16,39 +16,38 @@
   <script src="https://unpkg.com/netlify-cms@^2.9.0/dist/netlify-cms.js"></script>
 
   <script>
-  var imageInsertEditorComponent = {
-    label: 'Image',
-    id: 'image',
-    fromBlock: match =>
-      match && {
-        image: match[2],
-        alt: match[1],
-      },
-    toBlock: ({ alt, image, title }) =>
-      `![${alt || ''}](${image || ''})`,
-    // eslint-disable-next-line react/display-name
-    toPreview: ({ alt, image }, getAsset) => (
-      <figure><a href={getAsset(image) || ''} class="mg-link"><img src={getAsset(image) || ''} ></a><figcaption class="caption">{alt || ''}</figcaption></figure>
-    ),
-    pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)$/,
-    fields: [
-      {
-        label: 'Image',
-        name: 'image',
-        widget: 'image',
-        media_library: {
-          allow_multiple: false,
+    var imageInsertEditorComponent = {
+      label: 'Image',
+      id: 'image',
+      fromBlock: match =>
+        match && {
+          image: match[2],
+          alt: match[1],
         },
-      },
-      {
-        label: 'Alt Text',
-        name: 'alt',
-      }
-    ],
-  };
+      toBlock: ({ alt, image, title }) =>
+        `![${alt || ''}](${image || ''})`,
+      // eslint-disable-next-line react/display-name
+      toPreview: ({ alt, image }, getAsset) => (
+        `<figure><a href={getAsset(image) || ''} class="mg-link"><img src={getAsset(image) || ''} ></a><figcaption class="caption">{alt || ''}</figcaption></figure>`
+      ),
+      pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)$/,
+      fields: [
+        {
+          label: 'Image',
+          name: 'image',
+          widget: 'image',
+          media_library: {
+            allow_multiple: false,
+          },
+        },
+        {
+          label: 'Alt Text',
+          name: 'alt',
+        }
+      ],
+    };
 
-  CMS.registerEditorComponent(imageInsertEditorComponent);
-
+    CMS.registerEditorComponent(imageInsertEditorComponent);
 
     CMS.registerPreviewStyle("https://mobilab.mobidays.com/assets/lib/normalize.css");
     CMS.registerPreviewStyle("https://mobilab.mobidays.com/assets/css/monokai.css");
