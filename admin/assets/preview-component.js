@@ -64,10 +64,10 @@ var mobi_preview = {
           h('div', { id: 'cover', 'className': 'container', style: { 'background-image': 'url('+ coverImagePath.toString() +')' } },
               h('div', {},
                   h('div', { id: 'cover-author-image', style: { 'background-image': 'url('+ thumbnailPath.toString() +')' } },
-                      h('span', { 'className': 'sr-only' }, entry.getIn([ 'data', 'title' ]) )
+                      h('span', { 'className': 'sr-only' }, authorTitle )
                   ),
                   h('div', {},
-                      h('h1', {}, authorName || authorTitle ),
+                      h('h1', {}, authorName || authorTitle,
                           h('b', { style: { 'font-size': '11px' } }, authorSubName )
                       )
                   ),
@@ -79,7 +79,7 @@ var mobi_preview = {
           h('div', { id: 'content', 'className': 'container post', role: 'main' },
               h('div', { id: 'post-footer' },
                   h('a', { id: 'post-author' },
-                      h('div', { id: 'author-image', style: { 'background-image': 'url('+ thumbnail.toString() +')' } },
+                      h('div', { id: 'author-image', style: { 'background-image': 'url('+ thumbnailPath.toString() +')' } },
                           h('span', { 'className': 'sr-only' }, authorTitle )
                       ),
                       h('p', { id: 'author-name', style: { 'font-weight': 'bold' } }, authorTitle,
