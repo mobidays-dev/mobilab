@@ -16,10 +16,28 @@
   <script src="https://unpkg.com/netlify-cms@^2.9.0/dist/netlify-cms.js"></script>
 
   <script>
+  CMS.registerEditorComponent({
+    // Internal id of the component
+    id: "image",
+    // Visible label
+    label: "Image",
+
+    // Preview output for this component. Can either be a string or a React component
+    // (component gives better render performance)
+    toPreview: function(obj) {
+      return (
+        '<img src="http://img.youtube.com/vi/' + obj.id + '/maxresdefault.jpg" alt="Youtube Video"/>'
+      );
+    }
+  });
+
+
     CMS.registerPreviewStyle("https://mobilab.mobidays.com/assets/lib/normalize.css");
     CMS.registerPreviewStyle("https://mobilab.mobidays.com/assets/css/monokai.css");
     CMS.registerPreviewStyle("https://mobilab.mobidays.com/assets/lib/magnific-popup.min.css");
     CMS.registerPreviewStyle("https://mobilab.mobidays.com/assets/css/screen.css");
+
+
 
     var PostPreview = createClass({
       render: function() {
