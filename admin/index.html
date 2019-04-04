@@ -28,7 +28,7 @@
         `![${alt || ''}](${image || ''})`,
       // eslint-disable-next-line react/display-name
       toPreview: ({ alt, image }, getAsset) => (
-        `<figure><a href={getAsset(image) || ''} class="mg-link"><img src={getAsset(image) || ''} ></a><figcaption class="caption">{alt || ''}</figcaption></figure>`
+        `<figure><a href=${getAsset(image) || ''} class="mg-link"><img src=${getAsset(image) || ''} ></a><figcaption class="caption">${alt || ''}</figcaption></figure>`
       ),
       pattern: /^!\[(.*)\]\((.*?)(\s"(.*)")?\)$/,
       fields: [
