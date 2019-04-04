@@ -32,7 +32,7 @@ var mobi_preview = {
           h('div', { id: 'content', 'className': 'container post', role: 'main' },
               h('div', { id: 'post-content' },
                   h('p', {},
-                      (this.props.widgetsFor('tags').origin)?
+                      (this.props.widgetsFor('tags').origin !== undifined)?
                       this.props.widgetsFor('tags').map(function(tag, index) {
                           return h('a', { 'className': 'tag', href: '/tags/'+tag.getIn([ 'data' ]) },
                             '#', tag.getIn([ 'data' ])
