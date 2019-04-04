@@ -1688,11 +1688,14 @@ body.author-template #cover p {
 }
 
 @media only screen and (max-width: 540px) {
+  #cover-author-image {
+      left: -60px;
+  }
   #cover-author-image+div,
   #cover-author-image+div+p{
     text-align:left;
-    width:58%;
-    margin-left: 42%;
+    width:75%;
+    margin-left: 25%;
   }
   #cover-author-image+div+p{
     word-break:break-all;

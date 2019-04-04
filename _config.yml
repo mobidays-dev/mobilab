@@ -6,6 +6,7 @@ description: |
 baseurl: ''
 url: 'https://mobilab.mobidays.com/'
 timezone: Asia/Seoul
+reply: false
 
 repository:  mobidays-dev/mobilab
 
@@ -64,7 +65,7 @@ facebook:
 kakao:
   app_key : '6f032c9f8925f03d4b23e8a9058837b1'
 twitter:
-  username: mobidev
+  username:
 google_plus:
   username: mobidev
 naver_blog:
