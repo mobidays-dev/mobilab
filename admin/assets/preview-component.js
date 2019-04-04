@@ -11,6 +11,7 @@ var mobi_preview = {
 
       var author = entry.getIn([ 'data', 'author' ]) || 'dev';
       var date = entry.getIn([ 'data', 'date' ]) || '';
+      console.log(this.props.widgetsFor('tags'))
       console.log(this.props.widgetsFor('tags').hasOwnProperty('origin'))
       return h('div', { id: 'wrapper' },
           h('div', { id: 'cover', 'className': 'container', style: { 'background-image': 'url('+ coverImagePath.toString() +')' } },
