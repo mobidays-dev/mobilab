@@ -11,7 +11,7 @@ media_folder: "static/images"
 
 collections:
   - name: "drafts" # Used in routes, e.g. /admin/collections/blog
-    label: "Draft" # Used in the UI
+    label: "초안" # Used in the UI
     label_singular: "Draft" # Used in the UI, ie: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
     filter:
@@ -57,7 +57,7 @@ collections:
       - {label: "게시글 내용", name: "body", widget: "markdown"}
 
   - name: "posts" # Used in routes, e.g. /admin/collections/blog
-    label: "Post" # Used in the UI
+    label: "포스팅" # Used in the UI
     label_singular: "Post" # Used in the UI, ie: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
     filter:
@@ -105,7 +105,7 @@ collections:
     #  - {label: "SEO Description", name: "description", widget: "text"}
 
   - name: "authors" # Used in routes, e.g. /admin/collections/blog
-    label: "Author" # Used in the UI
+    label: "작성자" # Used in the UI
     label_singular: "Author" # Used in the UI, ie: "New Post"
     folder: "_authors" # The path to the folder where the documents are stored
     description: >
@@ -123,8 +123,8 @@ collections:
       - {label: "썸네일", name: "image", widget: "image", default: "/static/authors/default.png"}
 
   - name: "tags" # Used in routes, e.g. /admin/collections/blog
-    label: "Tag" # Used in the UI
-    label_singular: "Tag" # Used in the UI, ie: "New Post"
+    label: "태그 설정" # Used in the UI
+    label_singular: "tag" # Used in the UI, ie: "New Post"
     folder: "_tags" # The path to the folder where the documents are stored
     description: >
       새로운 해쉬태그가 필요하다면 등록 후 사용해 주세요. :)
