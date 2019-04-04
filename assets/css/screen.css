@@ -1393,6 +1393,7 @@ body.author-template #cover p {
     /* cover */
     #cover {
         height: 170px !important;
+        background-position:center;
     }
     #cover>div{ max-width: none;width: 95%;}
     #cover h1 {
