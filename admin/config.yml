@@ -11,7 +11,7 @@ media_folder: "static/images"
 
 collections:
   - name: "drafts" # Used in routes, e.g. /admin/collections/blog
-    label: "초안" # Used in the UI
+    label: "드래프트" # Used in the UI
     label_singular: "Draft" # Used in the UI, ie: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
     filter:
@@ -33,7 +33,7 @@ collections:
         valueField: "title"
         displayFields: ["title", "name"]
         default: "dev"
-        hint: "Author 메뉴에서 글쓴이 등록 후 사용해 주세요. :)"
+        hint: "[작성자] 메뉴에서 글쓴이 등록 후 사용해 주세요. :)"
       - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm", dateFormat:true}
       - {label: "커버이미지 ", name: "image", widget: "image", required: false }
       - label: "커버이미지 출처"
@@ -52,7 +52,7 @@ collections:
         displayFields: ["title"]
         multiple: true
         required: false
-        hint: "필요한 태그가 없을 경우, Tag 메뉴에서 등록 후 사용해 주세요 :)"
+        hint: "필요한 태그가 없을 경우, [태그 관리] 메뉴에서 등록 후 사용해 주세요 :)"
       - {label: "노출상태", name: "published", widget: "boolean", default: false }
       - {label: "게시글 내용", name: "body", widget: "markdown"}
 
@@ -79,7 +79,7 @@ collections:
         valueField: "title"
         displayFields: ["title", "name"]
         default: "dev"
-        hint: "Author 메뉴에서 등록 후 사용해 주세요 :)"
+        hint: "[작성자] 메뉴에서 등록 후 사용해 주세요 :)"
       - {label: "작성일", name: "date", widget: "datetime" , format: "YYYY-MM-DD hh:mm", dateFormat:true}
       - {label: "커버이미지", name: "image", widget: "image", required: false }
       - label: "커버이미지 출처"
@@ -98,7 +98,7 @@ collections:
         displayFields: ["title"]
         multiple: true
         required: false
-        hint: "필요한 태그가 없을 경우, Tag 메뉴에서 등록 후 사용해 주세요 :)"
+        hint: "필요한 태그가 없을 경우, [태그 관리] 메뉴에서 등록 후 사용해 주세요 :)"
       - {label: "노출상태", name: "published", widget: "boolean", default: true }
       - {label: "게시글 내용", name: "body", widget: "markdown"}
     #meta:
@@ -123,7 +123,7 @@ collections:
       - {label: "썸네일", name: "image", widget: "image", default: "/static/authors/default.png"}
 
   - name: "tags" # Used in routes, e.g. /admin/collections/blog
-    label: "태그 설정" # Used in the UI
+    label: "태그 관리" # Used in the UI
     label_singular: "tag" # Used in the UI, ie: "New Post"
     folder: "_tags" # The path to the folder where the documents are stored
     description: >

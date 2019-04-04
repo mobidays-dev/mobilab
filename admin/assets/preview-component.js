@@ -11,7 +11,7 @@ var mobi_preview = {
 
       var author = entry.getIn([ 'data', 'author' ]) || 'dev';
       var date = entry.getIn([ 'data', 'date' ]) || '';
-
+      console.log(this.props.widgetsFor('tags'))
       return h('div', { id: 'wrapper' },
           h('div', { id: 'cover', 'className': 'container', style: { 'background-image': 'url('+ coverImagePath.toString() +')' } },
               h('div', {},
@@ -33,6 +33,8 @@ var mobi_preview = {
               h('div', { id: 'post-content' },
                   h('p', {},
                       this.props.widgetsFor('tags').map(function(tag, index) {
+                        console.log(tag)
+                        console.log(index)
                         if(!tag) return '';
                         return h('a', { 'className': 'tag', href: '/tags/'+tag.getIn([ 'data' ]) },
                           '#', tag.getIn([ 'data' ])
