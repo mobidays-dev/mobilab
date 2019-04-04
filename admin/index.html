@@ -55,6 +55,7 @@
                 h('div', { id: 'post-content' },
                     h('p', {},
                         this.props.widgetsFor('tags').map(function(tag, index) {
+                          console.log(index)
                           if(!tag) return;
                           return h('a', { 'className': 'tag', href: '/tags/'+tag.getIn([ 'data' ]) },
                             '#', tag.getIn([ 'data' ])
