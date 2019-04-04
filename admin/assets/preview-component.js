@@ -38,7 +38,7 @@ var mobi_preview = {
                             '#', tag.getIn([ 'data' ])
                           );
                         }else{
-                          return '';
+                          return ' ';
                         }
                       })
                   ),
