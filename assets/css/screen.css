@@ -1030,12 +1030,14 @@ body.page-template #navbar {
 #post-content a {
     text-decoration: none;
     text-decoration-color: #e6e6e6;
-    padding:0 10px;
-    border-radius: 50px;
-    border: 1px solid #ddd;
 }
 
-#post-content a.tag{background: none;}
+#post-content a.tag{
+  background: none;
+  padding:0 10px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+}
 
 #post-content > *:first-child {
     margin: 0;
