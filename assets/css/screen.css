@@ -1705,7 +1705,7 @@ body.author-template #cover p {
     -webkit-box-orient: vertical;
   }
 
-  #cover+div>h1{
+  #cover h1{
     word-break:break-all;
     white-space: normal;
     line-height: 1.2;
@@ -1725,7 +1725,7 @@ body.author-template #cover p {
       width:60px;
       height:60px;
   }
-  #cover+div>h1{
+  #cover h1{
     word-break:break-all;
     white-space: normal;
     line-height: 1.2;
