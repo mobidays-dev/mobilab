@@ -16,7 +16,7 @@ var mobi_preview = {
           h('div', { id: 'cover', 'className': 'container', style: { 'background-image': 'url('+ coverImagePath.toString() +')' } },
               h('div', {},
                   h('h1', {}, entry.getIn([ 'data', 'title' ]) ),
-                  h('p', { style:{ 'color': 'white !important' } },  date.split(' ')[0].replace(/-/gi,'/'), ' by ',
+                  h('p', { style:{ 'color': 'white !important' } },  date.split(' ')[0].replace(/-/gi,'/'), ' by',
                       h('b', { style: { 'font-size': '11px' } },
                           h('a', { href: '/authors/' + author }, author )
                       )
@@ -31,6 +31,7 @@ var mobi_preview = {
           h('div', { id: 'navbar', 'className': 'container' } ),
           h('div', { id: 'content', 'className': 'container post', role: 'main' },
               h('div', { id: 'post-content' },
+                  h('h1', {}, entry.getIn([ 'data', 'title' ]) ),
                   h('p', {},
                       (this.props.widgetsFor('tags').hasOwnProperty('_origin'))?
                       this.props.widgetsFor('tags').map(function(tag, index) {
