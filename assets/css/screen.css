@@ -526,8 +526,9 @@ for small screen(<720px):
   height: 310px;
   background: repeat-x center;
   /* background-size: cover; */
-  opacity: .7;
+  opacity: .3;
   max-width:none;
+  padding:none;
 }
 /* @@iolo */
 #cover cite {
