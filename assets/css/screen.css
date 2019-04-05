@@ -1705,7 +1705,7 @@ body.author-template #cover p {
     -webkit-box-orient: vertical;
   }
 
-  #cover+div h1{
+  #cover+div>h1{
     word-break:break-all;
     white-space: normal;
     line-height: 1.2;
@@ -1724,6 +1724,17 @@ body.author-template #cover p {
       top:45px;
       width:60px;
       height:60px;
+  }
+  #cover+div>h1{
+    word-break:break-all;
+    white-space: normal;
+    line-height: 1.2;
+    max-height: 3.6em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding:0 5%;
+    box-sizing: border-box;
   }
 }
 /* responsive images - mobile(2x) */
