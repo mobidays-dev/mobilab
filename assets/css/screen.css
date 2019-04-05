@@ -1024,8 +1024,9 @@ body.page-template #navbar {
     padding:0 10px;
     border-radius: 50px;
     border: 1px solid #ddd;
-    background: none;
 }
+
+#post-content a.tag{background: none;}
 
 #post-content > *:first-child {
     margin: 0;
