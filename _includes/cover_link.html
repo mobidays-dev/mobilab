@@ -1,7 +1,10 @@
-{% if include.cover %}
+{% assign cover_title = include.cover.title | default: include.cover.link | strip %}
+{% assign cover_link = include.cover.link | default: '#' %}
+
+{% if cover_title and cover_title != '' %}
 <cite>
-  커버 이미지 출처: <a href="{{ include.cover.link }}" target="_blank">
-    {{ include.cover.title | default: include.cover.link }}
+  커버 이미지 출처: <a href="{{ cover_link }}" target="_blank">
+    {{ cover_title }}
   </a>
 </cite>
 {% endif %}
