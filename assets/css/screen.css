@@ -446,7 +446,7 @@ for small screen(<720px):
 #cover:after{
   content: '';
   position:absolute;top:0;left:0;bottom: 0;right: 0;
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.7);
 }
 #cover>div{
   max-width: 940px;
@@ -510,7 +510,7 @@ for small screen(<720px):
 #cover a:hover {
     color: #fff;
 }
-
+::placeholder,:-ms-input-placeholder,::-ms-input-placeholder{ color:#ddd; }
 #cover video {
     display: none; /* show/remove by script */
     position: absolute;
