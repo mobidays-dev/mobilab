@@ -5,8 +5,8 @@ author: dev
 date: '2018-02-28 04:37'
 image: /static/images/gdpr_main.jpg
 cover:
-  link: 'https://www.csoonline.com'
-  title: CSO
+  link: ''
+  title: ''
 tags:
   - research
   - GDPR
