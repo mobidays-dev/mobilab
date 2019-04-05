@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign author = site.authors | where: 'title', page.author | first %}
-<div id="cover" class="container"
+<div id="cover" class="container on"
      {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
     <div>
         <h1>{{ page.title }}</h1>
