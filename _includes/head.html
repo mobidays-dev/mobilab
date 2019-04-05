@@ -41,8 +41,9 @@
 <meta name="twitter:data1" content="{{ meta_author }}"/>
 <meta name="twitter:image:src" content="{{ meta_image }}"/>
 {% if page.tags %}
+<meta name="keywords" content="{{ page.tags | uniq | join: ',' }}">
 <meta name="twitter:label2" content="Filed under"/>
-<meta name="twitter:data2" content="{{ page.tags | join: ','}}"/>
+<meta name="twitter:data2" content="{{ page.tags | uniq | join: ',' }}"/>
 {% for tag in page.tags %}
 <meta property="article:tag" content="{{ tag }}"/>
 {% endfor %}
