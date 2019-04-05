@@ -1210,8 +1210,13 @@ body.author-template #cover p {
 /* #cover a, #cover a:active, #cover a:hover, #cover a:link, #cover a:visited { padding:0 10px; } */
 #cover cite a{ padding:0 10px; } /*출처*/
 #cover p a{ padding:0 10px 0 3px; } /* by...*/
+<<<<<<< HEAD
 #post-content h6{ font-size:18px;text-align: center;background: #f9f9f9;padding:7% 0 3%;box-sizing: border-box;}
 #post-content h6+p{ text-align: center;border-bottom:#eee double 3px;background: #f9f9f9;margin: 0;padding:5% 0;}
+=======
+#post-content h6{ font-size:18px;text-align: center;background: #f9f9f9;padding:7% 0;box-sizing: border-box;}
+#post-content h6+p{ text-align: center;border-bottom:#eee double 3px; }
+>>>>>>> b4620acf03ae2391b1fa5a995ce768a7f91ae505
 
 /* minimal responsive stuff by @@iolo */
 @media only screen and (min-width: 720px){
