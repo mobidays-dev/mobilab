@@ -1218,6 +1218,8 @@ body.author-template #cover p {
     border-bottom: none;
 }
 
+#cover a, #cover a:active, #cover a:hover, #cover a:link, #cover a:visited { padding:0 10px; }
+
 /* minimal responsive stuff by @@iolo */
 @media only screen and (min-width: 720px){
   .visible-sm, .hidden-lg {
