@@ -32,14 +32,14 @@ var mobi_preview = {
           h('div', { id: 'content', 'className': 'container post', role: 'main' },
               h('div', { id: 'post-content' },
                   // h('h1', {}, entry.getIn([ 'data', 'title' ]) ),
-                  // h('p', {},
-                  //     (this.props.widgetsFor('tags').hasOwnProperty('_origin'))?
-                  //     this.props.widgetsFor('tags').map(function(tag, index) {
-                  //         return h('a', { 'className': 'tag', href: '/tags/'+tag.getIn([ 'data' ]) },
-                  //           '#', tag.getIn([ 'data' ])
-                  //         );
-                  //     }) : ''
-                  // ),
+                  h('p', {},
+                      (this.props.widgetsFor('tags').hasOwnProperty('_origin'))?
+                      this.props.widgetsFor('tags').map(function(tag, index) {
+                          return h('a', { 'className': 'tag', href: '/tags/'+tag.getIn([ 'data' ]) },
+                            '#', tag.getIn([ 'data' ])
+                          );
+                      }) : ''
+                  ),
                   this.props.widgetFor('body')
               )
           ),

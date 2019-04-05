@@ -25,12 +25,12 @@ layout: default
 
 <div id="content" class="container post" role="main">
     <div id="post-content">
-      <!-- <h6>{{ page.title }}</h6>
+      <!-- <h6>{{ page.title }}</h6>-->
       <p>
           {% for tag in page.tags %}
               <a href="{{ site.baseurl }}/tags/{{ tag }}" class="tag">#{{ tag }}</a>
           {% endfor %}
-      </p> -->
+      </p>
       {{ content }}
     </div>
     <div id="post-footer">
