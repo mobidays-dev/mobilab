@@ -1705,6 +1705,18 @@ body.author-template #cover p {
     -webkit-box-orient: vertical;
   }
 
+  #cover+div h1{
+    word-break:break-all;
+    white-space: normal;
+    line-height: 1.2;
+    max-height: 3.6em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding:0 5%;
+    box-sizing: border-box;
+  }
+
 }
 @media only screen and (max-width: 360px) {
   #cover-author-image {
