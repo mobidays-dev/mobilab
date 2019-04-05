@@ -521,7 +521,7 @@ for small screen(<720px):
     z-index: -2;
     object-fit: cover;
 }
-.cover_back_bg{
+#cover .cover_back_bg{
   position:fixed;top:0;left:0;right:0;
   height: 310px;
   background: repeat-x center;
