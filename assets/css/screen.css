@@ -441,6 +441,12 @@ for small screen(<720px):
     max-width:none;
     display: flex;display:-ms-flex;display: -webkit-flex;display: -o-flex;
     flex-wrap: wrap;-ms-flex-wrap: wrap;-webkit-flex-wrap: wrap;-o-flex-wrap: wrap;
+    position: relative;
+}
+#cover:after{
+  content: '';
+  position:absolute;top:0;left:0;bottom: 0;right: 0;
+  background: rgba(0,0,0,.5);
 }
 #cover>div{
   max-width: 940px;
@@ -474,8 +480,15 @@ for small screen(<720px):
 }
 
 #cover h1 {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 52px; /* 52px = 36(font-size) + 16(line-spacing) */
+    word-break:break-all;
+    white-space: normal;
+    line-height: 1.2;
+    max-height: 3.6em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 #cover p {
@@ -1726,13 +1739,6 @@ body.author-template #cover p {
       height:60px;
   }
   #cover h1{
-    word-break:break-all;
-    white-space: normal;
-    line-height: 1.2;
-    max-height: 3.6em;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
     padding:0 5%;
     box-sizing: border-box;
   }
