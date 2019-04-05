@@ -43,9 +43,9 @@ code.highlighter-rouge {
   margin: 0;
   padding:0 7px;
   /* font-size: 85%; */
-  background-color: rgba(228,140,21..2);
+  /* background-color: rgba(84,137,243.2); */
   /* border-radius: 3px; */
-  color:#111;
+  color:rgb(84,137,243);
   font-weight: bold;
   font-family: 'NanumGothicWeb', sans-serif;
 }
