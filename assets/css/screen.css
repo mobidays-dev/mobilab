@@ -522,13 +522,13 @@ for small screen(<720px):
     object-fit: cover;
 }
 #cover .cover_back_bg{
-  position:fixed;top:0;left:0;right:0;
+  position:absolute;top:0;left:0;right:0;
   height: 310px;
   background: repeat-x center;
   /* background-size: cover; */
   opacity: .3;
   max-width:none;
-  padding:none;
+  padding-top:0;
 }
 /* @@iolo */
 #cover cite {
