@@ -1210,7 +1210,7 @@ body.author-template #cover p {
 /* #cover a, #cover a:active, #cover a:hover, #cover a:link, #cover a:visited { padding:0 10px; } */
 #cover cite a{ padding:0 10px; } /*출처*/
 #cover p a{ padding:0 10px 0 3px; } /* by...*/
-#post-content h6{ font-size:2em;text-align: center;background: #f9f9f9;padding:7% 0;box-sizing: border-box;}
+#post-content h6{ font-size:18px;text-align: center;background: #f9f9f9;padding:7% 0;box-sizing: border-box;}
 #post-content h6+p{ text-align: center;border-bottom:#eee double 3px; }
 
 /* minimal responsive stuff by @@iolo */
