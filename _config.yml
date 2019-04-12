@@ -4,7 +4,7 @@ description: |
   세상 모든 트래픽의 가장 효율적인 연결.
   Mobidays의 기술 블로그 mobilab입니다.
 baseurl: ''
-url: 'https://mobilab.mobidays.com/'
+url: 'https://mobilab.mobidays.com'
 timezone: Asia/Seoul
 reply: false
 
