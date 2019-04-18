@@ -4,7 +4,7 @@ title: '네이버 테크 콘서트 NAVER TECH CONCERT: FRONT END 2019 참가 후
 author: jayoung.lee
 date: '2019-04-18 02:23'
 cover: {}
-published: false
+published: true
 ---
  웹프론트엔드와 관련된 외부행사 검색 중 네이버 테크 콘서트 <NAVER TECH CONCERT : FRONT END 2019> 를 알게 되었습니다:) 네이버에서 하는 DEVIEW 2018에 갔었는데, 흥미롭긴 했지만 저에겐 다소 이해하기 어려운 세션들이 많았던 걸로 기억합니다. 그런데, 이번에 하는 테크 콘서트는 주니어 개발자에게 적합한 컨텐츠를 소개하고 있는 것 같아서 참가 신청 후 당첨되어 방문하게 되었습니다.
 
