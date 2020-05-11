@@ -54,9 +54,17 @@ Fraud Traffic이 발생할 수 있는 근본적인 원인은 App 혹은 Web의 �
 
 
 
+
+
+
+
 * **Pixel Serving**
 
 보이지 않는 픽셀에 광고를 송출하여 유저에게는 보이지 않음
+
+
+
+
 
 
 
@@ -66,9 +74,17 @@ Fraud Traffic이 발생할 수 있는 근본적인 원인은 App 혹은 Web의 �
 
 
 
+
+
+
+
 * **Hijacking**
 
 멀웨어가 포함된 앱을 다운받았을 때 유저의 디바이스에 침투하여 유저에게 보이지 않는 광고를 송출
+
+
+
+
 
 
 
@@ -88,15 +104,21 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 
 
 
+
+
 * **Click Stuffing**
 
 비보상형 캠페인에 보상형 트래픽 쓰면서 CTR을 낮추기 위해 인위적으로 클릭을 생산하고 투입하는 것
 
 
 
+
+
 * **Hijacking**
 
 멀웨어가 포함된 앱을 다운받았을 때 유저의 디바이스에 침투하여 페이지를 오픈하고 클릭을 생성함 (멀웨어 쥬디)
+
+
 
 
 
@@ -116,15 +138,21 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 
 
 
+
+
 * **Device Emulation**
 
 실제 디바이스가 아닌 컴퓨터에서 에뮬레이션을 돌려서 이벤트 발생
 
 
 
+
+
 * **Unauthorized versions of Apps**
 
 앱을 복제하여 유저가 설치하게 한 후 설치한 유저의 정보를 복사하여 다른 Install 발생시 사용
+
+
 
 
 
