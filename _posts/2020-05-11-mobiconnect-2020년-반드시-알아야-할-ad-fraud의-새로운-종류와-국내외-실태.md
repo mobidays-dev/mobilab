@@ -106,4 +106,4 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 
 
 
-![](/static/images/배너1.png)
+[![모비커넥트배](/static/images/배너1.png)](https://vigilant-kalam-608067.netlify.app/)
