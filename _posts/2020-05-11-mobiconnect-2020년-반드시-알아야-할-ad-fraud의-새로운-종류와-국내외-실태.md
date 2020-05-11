@@ -46,55 +46,25 @@ Fraud Traffic이 발생할 수 있는 근본적인 원인은 App 혹은 Web의 �
 
 먼저, Impression Fraud의 Technical Fraud에는 Ad Stacking, Pixel Serving, Background Ad Serving 그리고 Hijacking이 있으며, Compliance Fraud에는 VIew Viewability가 있습니다.
 
-
-
 * **Ad Stacking**
 
 여러 개의 배너를 겹쳐서 노출
-
-
-
-
-
-
 
 * **Pixel Serving**
 
 보이지 않는 픽셀에 광고를 송출하여 유저에게는 보이지 않음
 
-
-
-
-
-
-
 * **Background Ad Serving**
 
 앱이 백그라운드에서 돌고 있는 동안에도 광고 송출
-
-
-
-
-
-
 
 * **Hijacking**
 
 멀웨어가 포함된 앱을 다운받았을 때 유저의 디바이스에 침투하여 유저에게 보이지 않는 광고를 송출
 
-
-
-
-
-
-
 * **View Viewability**
 
 유저가 거의 보지 않는 곳에(ex 페이지 하단) 광고 배치
-
-
-
-
 
 Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud의 Technical Fraud에는 Attribution Fraud, Click Stuffing, Hijacking이 있고, Compliance Fraud에는 Click Misusage가 있습니다.
 
@@ -102,33 +72,17 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 
 웹에서 주로 쓰는 Cookie Stuffing을 계승한 것으로, 모바일에서는 페이지 방문시 특정 앱 Transaction id가 자동으로 생성되고 후에 유저가 앱스토어에서 오가닉으로 다운받으면그 웹사이트가 기여를 한 것으로 됨
 
-
-
-
-
 * **Click Stuffing**
 
 비보상형 캠페인에 보상형 트래픽 쓰면서 CTR을 낮추기 위해 인위적으로 클릭을 생산하고 투입하는 것
-
-
-
-
 
 * **Hijacking**
 
 멀웨어가 포함된 앱을 다운받았을 때 유저의 디바이스에 침투하여 페이지를 오픈하고 클릭을 생성함 (멀웨어 쥬디)
 
-
-
-
-
 * **Click Misusage**
 
 클릭을 유도하기 위해 크리에이티브를 변형해서 노출하는 것으로, 과장을 하거나 잘못된 내용을 넣거나 실제 링크가 랜딩되는 앱과 다른 앱의 소재를 쓰는 등의 방식
-
-
-
-
 
 마지막으로 Install과 Post-install 단계에서의 Technical Fraud와 Compliance Fraud에는 각각 Faked Postback, Device Emulation, Unauthorized versions of Apps과 Undisclosed Rebrokering이 있습니다.
 
@@ -136,44 +90,28 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 
 트래킹솔루션에서 Postback이 송출되는 것이 아니라 써드파티가 브라우저나 API콜 등을 통해서 Install, Post install postback을 흉내내는 것 (IAP 포함)
 
-
-
-
-
 * **Device Emulation**
 
 실제 디바이스가 아닌 컴퓨터에서 에뮬레이션을 돌려서 이벤트 발생
-
-
-
-
 
 * **Unauthorized versions of Apps**
 
 앱을 복제하여 유저가 설치하게 한 후 설치한 유저의 정보를 복사하여 다른 Install 발생시 사용
 
-
-
-
-
 * **Undisclosed Rebrokering**
 
 오퍼를 다른 퍼블리셔에게 제공함
-
-
-
-
-
-
-
-
-
-
 
 > ### 더욱 상세한 Fraud와 국내외 실태가 궁금하시다 아래 리포트를 다운받아보세요.
 
 ![](/static/images/배너1.png)
 
 <!--EndFragment-->
+
+
+
+<!--EndFragment-->
+
+
 
 <!--EndFragment-->
