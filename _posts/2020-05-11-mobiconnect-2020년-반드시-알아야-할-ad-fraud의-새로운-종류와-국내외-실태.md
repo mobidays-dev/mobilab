@@ -34,10 +34,6 @@ Fraud Traffic이 발생할 수 있는 근본적인 원인은 App 혹은 Web의 �
 
 ![*(이미지출처: https://en.wikipedia.org/wiki/File:Fraud.jpg)*](https://lh6.googleusercontent.com/xr_6bxkQyVk6TlNyRelZQo25XbdJcTWY_OBtz6115NZNRDqaHuqGa0ZS-Y0uQV30A0JaZpQD0nk_kGoWzzFhPKug2Lin2fXLiNbJKO9wgzo2It5WCn_J5rsRHVUTew)
 
-
-
-
-
 # Ad fraud의 분류
 
 앞서 언급한 바와 같이, Ad fraud는 광고 캠페인이 유저들에게 도달하기 까지의 모든 트래픽 과정마다 발생할 수 있습니다. 국내 Ad network인 모비커넥트에서 더 자세하게 Traffic의 각 Touch point와 전환에 따라 Impression fraud, Click fraud, Install fraud 로 분류하여 안내드립니다.
@@ -46,15 +42,9 @@ Fraud Traffic이 발생할 수 있는 근본적인 원인은 App 혹은 Web의 �
 
 ![](https://lh4.googleusercontent.com/amhjFIKguZs1i9EAXSg_OYvQbxVXl63LS5sx6_QkRQkU08AsUDhc6F4N1iuVK06xyPtNiE-WXvxSRraWNmB2OdBv0pTErGEab5CbFvtVtLu6CqyYSMFAvYugSbOXVg)
 
-
-
 위의 표는 Mobidays에서 Ad Fraud를 분류한 기준표로서 각 Touch point(Impression, Click, Install)의 Technical fraud와 Compliance Fraud를 보여줍니다.
 
 먼저, Impression Fraud의 Technical Fraud에는 Ad Stacking, Pixel Serving, Background Ad Serving 그리고 Hijacking이 있으며, Compliance Fraud에는 VIew Viewability가 있습니다.
-
-
-
-
 
 * Ad Stacking
 
@@ -76,15 +66,7 @@ Fraud Traffic이 발생할 수 있는 근본적인 원인은 App 혹은 Web의 �
 
 유저가 거의 보지 않는 곳에(ex 페이지 하단) 광고 배치
 
-
-
-
-
-
-
 Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud의 Technical Fraud에는 Attribution Fraud, Click Stuffing, Hijacking이 있고, Compliance Fraud에는 Click Misusage가 있습니다.
-
-
 
 * Attribution Fraud
 
@@ -101,10 +83,6 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 * Click Misusage
 
 클릭을 유도하기 위해 크리에이티브를 변형해서 노출하는 것으로, 과장을 하거나 잘못된 내용을 넣거나 실제 링크가 랜딩되는 앱과 다른 앱의 소재를 쓰는 등의 방식
-
-
-
-
 
 마지막으로 Install과 Post-install 단계에서의 Technical Fraud와 Compliance Fraud에는 각각 Faked Postback, Device Emulation, Unauthorized versions of Apps과 Undisclosed Rebrokering이 있습니다.
 
@@ -124,17 +102,11 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 
 오퍼를 다른 퍼블리셔에게 제공함
 
-
-
-
-
 > ### 더욱 상세한 Fraud와 국내외 실태가 궁금하셨다면 아래 리포트를 다운받아보세요.
->
-> ![](/static/images/배너1.png)
 
 
 
-
+![](/static/images/배너1.png)
 
 <!--EndFragment-->
 
