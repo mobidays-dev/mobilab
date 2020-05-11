@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Mobiconnect] 2020년 반드시 알아야 할 AD Fraud의 새로운 종류와 국내외 실태"
+title: 2020년 반드시 알아야 할 AD Fraud의 새로운 종류와 국내외 실태
 author: 박소담
 date: 2020-05-11 07:01
 image: ""
@@ -103,8 +103,10 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 오퍼를 다른 퍼블리셔에게 제공함
 
 > ### 더욱 상세한 Fraud와 국내외 실태가 궁금하셨다면 아래 리포트를 다운받아보세요.
->
-> ![](/static/images/배너1.png)
+
+
+
+![](/static/images/배너1.png)
 
 <!--EndFragment-->
 
