@@ -34,13 +34,13 @@ Fraud Traffic이 발생할 수 있는 근본적인 원인은 App 혹은 Web의 �
 
 ![*(이미지출처: https://en.wikipedia.org/wiki/File:Fraud.jpg)*](https://lh6.googleusercontent.com/xr_6bxkQyVk6TlNyRelZQo25XbdJcTWY_OBtz6115NZNRDqaHuqGa0ZS-Y0uQV30A0JaZpQD0nk_kGoWzzFhPKug2Lin2fXLiNbJKO9wgzo2It5WCn_J5rsRHVUTew)
 
-# **Ad fraud의 분류**
+# Ad fraud의 분류
 
 앞서 언급한 바와 같이, Ad fraud는 광고 캠페인이 유저들에게 도달하기 까지의 모든 트래픽 과정마다 발생할 수 있습니다. 국내 Ad network인 모비커넥트에서 더 자세하게 Traffic의 각 Touch point와 전환에 따라 Impression fraud, Click fraud, Install fraud 로 분류하여 안내드립니다.
 
 더 나아가 Fraud가 실행되는 방식에 따라 기술을 이용하여 과금 이벤트를 인위적으로 생성하는 Technical Fraud와 기존 플랫폼의 규율을 위반하는 방식인 Compliance Fraud로 나눌 수 있습니다.
 
-![](https://lh4.googleusercontent.com/amhjFIKguZs1i9EAXSg_OYvQbxVXl63LS5sx6_QkRQkU08AsUDhc6F4N1iuVK06xyPtNiE-WXvxSRraWNmB2OdBv0pTErGEab5CbFvtVtLu6CqyYSMFAvYugSbOXVg)
+![](/static/images/pasted-image-0.jpg)
 
 위의 표는 Mobidays에서 Ad Fraud를 분류한 기준표로서 각 Touch point(Impression, Click, Install)의 Technical fraud와 Compliance Fraud를 보여줍니다.
 
@@ -103,10 +103,8 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 오퍼를 다른 퍼블리셔에게 제공함
 
 > ### 더욱 상세한 Fraud와 국내외 실태가 궁금하셨다면 아래 리포트를 다운받아보세요.
-
-
-
-![](/static/images/배너1.png)
+>
+> ![](/static/images/배너1.png)
 
 <!--EndFragment-->
 
