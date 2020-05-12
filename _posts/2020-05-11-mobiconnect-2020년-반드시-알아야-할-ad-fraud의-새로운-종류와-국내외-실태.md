@@ -34,7 +34,7 @@ Fraud Traffic이 발생할 수 있는 근본적인 원인은 App 혹은 Web의 �
 
 ![*(이미지출처: https://en.wikipedia.org/wiki/File:Fraud.jpg)*](https://lh6.googleusercontent.com/xr_6bxkQyVk6TlNyRelZQo25XbdJcTWY_OBtz6115NZNRDqaHuqGa0ZS-Y0uQV30A0JaZpQD0nk_kGoWzzFhPKug2Lin2fXLiNbJKO9wgzo2It5WCn_J5rsRHVUTew)
 
-# Ad fraud의 분류
+# **Ad fraud의 분류**
 
 앞서 언급한 바와 같이, Ad fraud는 광고 캠페인이 유저들에게 도달하기 까지의 모든 트래픽 과정마다 발생할 수 있습니다. 국내 Ad network인 모비커넥트에서 더 자세하게 Traffic의 각 Touch point와 전환에 따라 Impression fraud, Click fraud, Install fraud 로 분류하여 안내드립니다.
 
