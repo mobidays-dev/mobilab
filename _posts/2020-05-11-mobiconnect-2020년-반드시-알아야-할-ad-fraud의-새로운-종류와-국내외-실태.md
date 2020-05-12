@@ -104,4 +104,4 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 
 > ### 더욱 상세한 Fraud와 국내외 실태가 궁금하시다 아래 리포트를 다운받아보세요.
 
-[![이미지](/static/images/배너500.png)](https://vigilant-kalam-608067.netlify.app)
+[![이미지](/static/images/배너500.png){: width:"100%"}](https://vigilant-kalam-608067.netlify.app)
