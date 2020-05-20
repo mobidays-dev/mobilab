@@ -108,6 +108,6 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 
 
 
-<script src="https://vigilant-kalam-608067.netlify.app/clickEvent.js"></script>
 
-<a onclick="onClick()"><img src="https://vigilant-kalam-608067.netlify.app/배너1.png" width="100%" /></a>
+<script src="https://vigilant-kalam-608067.netlify.app/clickEvent.js"></script>
+<a onclick="onClick()" style="cursor:pointer"><img src="https://vigilant-kalam-608067.netlify.app/배너1.png" width="100%"></a>
