@@ -5,7 +5,7 @@ author: 이사라
 date: 2020-08-27 01:46
 image: /static/images/preview.png
 cover:
-  link: https://www.apple.com/kr/ios/ios-14-preview/?&cid=wwa-kr-kwgo-features--slid----iPhone-&mtid=20925e2040382&aosid=p238&mnid=snaTnmPqx-dc_mtid_20925e2040382_pcrid_447580355696_pgrid_109347811852_&anonymizeip=set
+  link: https://www.apple.com/kr/ios/ios-14-preview/
 tags:
   - ad-tech
   - mobile
