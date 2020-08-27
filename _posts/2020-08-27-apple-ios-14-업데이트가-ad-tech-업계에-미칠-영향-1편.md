@@ -25,6 +25,8 @@ published: true
 
  업데이트 이전, 앱 개발자들과 3rd Party Tracker, 광고주들은 LAT(Limited Ad Tracking)를 활성화한 유저가 아니라면 별도의 동의 절차 없이도 간편하게 IDFA 값을 취득할 수 있었습니다. 하지만 업데이트 이후, 애플이 개인정보 보호 정책을 강화하면서 앞으로 IDFA 값을 사용하기 위해서는 앱 사용자의 동의를 얻어야만 하게 되었습니다. 따라서 사용자의 동의를 얻지 않으면 IDFA를 제공받을 수 없고 따라서 타겟팅 광고 또는 광고 트래킹을 위한 사용자 식별에 많은 제한이 생기게 됩니다.
 
+![<그림 1. 광고 추적 동의 모달 예시 (출처:developers.apple)>](/static/images/그림1.jpg)
+
 > ## **광고 추적 제한**
 
 업데이트 이전에도 iOS 사용자는 광고 추적(이하 트래킹) 제한 기능을 직접 활성화하거나 IDFA 값을 초기화함으로써 타겟팅 광고를 거부할 수 있었습니다. 그러나 해당 기능을 활성화 하기에는 메뉴 접근성이 낮아, 기능을 활용하는 iOS 사용자는 약 30%에 불과했습니다(미국 기준, [출처](https://www.singular.net/blog/limit-ad-tracking-privacy-checkup-in-2020/)). 한 설문 조사에 따르면 그림1의 시스템 권한 알림 요청에서 사용자가 “Ask App Not to Track (앱 트래킹 비허용)” 버튼을 확실히 누를 가능성은 약 51%로 전망됩니다([출처](https://blog.tapresearch.com/2020/06/30/new-poll-suggests-ios-users-unlikely-to-share-idfa-with-publishers/)). 설문 참여자의 21%가 중립을 선택한 것을 고려하면, 업데이트 이후 광고주들은 상당수의 iOS 사용자들을 트래킹하기 어려워지게 됩니다.
