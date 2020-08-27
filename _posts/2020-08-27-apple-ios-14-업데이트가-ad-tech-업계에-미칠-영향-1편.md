@@ -10,6 +10,7 @@ tags:
   - ad-tech
   - mobile
   - trend
+  - ios
 published: true
 ---
 <!--StartFragment-->
