@@ -31,7 +31,7 @@ published: true
 
 업데이트 이전에도 iOS 사용자는 광고 추적(이하 트래킹) 제한 기능을 직접 활성화하거나 IDFA 값을 초기화함으로써 타겟팅 광고를 거부할 수 있었습니다. 그러나 해당 기능을 활성화 하기에는 메뉴 접근성이 낮아, 기능을 활용하는 iOS 사용자는 약 30%에 불과했습니다(미국 기준, [출처](https://www.singular.net/blog/limit-ad-tracking-privacy-checkup-in-2020/)). 한 설문 조사에 따르면 그림1의 시스템 권한 알림 요청에서 사용자가 “Ask App Not to Track (앱 트래킹 비허용)” 버튼을 확실히 누를 가능성은 약 51%로 전망됩니다([출처](https://blog.tapresearch.com/2020/06/30/new-poll-suggests-ios-users-unlikely-to-share-idfa-with-publishers/)). 설문 참여자의 21%가 중립을 선택한 것을 고려하면, 업데이트 이후 광고주들은 상당수의 iOS 사용자들을 트래킹하기 어려워지게 됩니다.
 
-![<그림 2. 사용자 동의 없이 IDFA를 취득할 수 있는 예외 조항 (출처:developer.apple)>](/static/images/idfa_guidelines.png)
+![<그림 2. 사용자 동의 없이 IDFA를 취득할 수 있는 예외 조항 (출처:developers.apple)>](/static/images/idfa_guidelines.png)
 
  앱 개발자가 사용자의 동의 없이도 IDFA 값을 취득할 수 있는 예외 사항도 있습니다(그림 2). 1)앱이 3rd Party Data 취급 플랫폼(애드네트워크, DMP 등)으로 사용자 식별값을 전송하지 못하는 경우, 2) 앱 내 데이터를 공유하는 플랫폼에서 [Ad Fraud](https://www.mobiinside.co.kr/2020/05/12/mobi-connect-ad-fraud/) 식별과 방지를 목적으로 앱 데이터를 이용하는 경우입니다. 예를 들면, 신용카드사의 경우에는 결제 모듈 내 Fraud 방지나 보안을 위한 목적에 한하여 IDFA를 동의없이 수집이 가능할지도 모릅니다. 이는 극히 제한적인 사례이므로, 대다수의 광고주들은 트래킹 프로세스에서 IDFA를 대체할 방법을 찾아야 합니다.
 
