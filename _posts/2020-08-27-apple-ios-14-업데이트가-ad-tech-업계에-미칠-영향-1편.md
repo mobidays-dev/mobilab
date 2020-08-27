@@ -19,7 +19,7 @@ published: true
 
  이 글은 Ad Tech(이하 애드테크) 업계 플레이어로 대두되는 Tracking Tool(이하 트래킹툴), Ad Network(이하 애드네트워크), Ad Exchange(이하 애드익스체인지), Attribution(이하 어트리뷰션), DSP, DMP, SSP 플랫폼 사용자에게 인사이트를 제공합니다. 특히 이 글을 읽고 있는 주체가 광고주, Publisher(이하 퍼블리셔), 광고 운영자 또는 광고 플랫폼 기획자라면 iOS 14 업데이트 이후 BM을 재설계해야 할 가능성이 높습니다. 연관 문서까지 참고하여 주시기 바랍니다.
 
-> ## **iOS 14 업데이**
+> ## **iOS 14 업데이트**
 
  [iOS 14](https://www.apple.com/kr/ios/ios-14-preview/?&cid=wwa-kr-kwgo-features--slid----iPhone-&mtid=20925e2040382&aosid=p238&mnid=snaTnmPqx-dc_mtid_20925e2040382_pcrid_447580355696_pgrid_109347811852_&anonymizeip=set)는 현재까지 나온 iOS 업데이트 중에 가장 큰 업데이트입니다. 애드테크 종사자가 가장 눈여겨봐야 할 업데이트 아젠다는 ‘개인 정보 보호 향상’ 입니다. Apple은 [WWDC 2020](https://developer.apple.com/wwdc20/)에서 iOS 사용자 개인정보 보호 정책을 강화하겠다고 발표했습니다. 이 정책으로 인한 변화는 일반 사용자가 정식버전으로 업데이트하게 되는 2020년 10월부터 본격화 될 것으로 보입니다.
 
