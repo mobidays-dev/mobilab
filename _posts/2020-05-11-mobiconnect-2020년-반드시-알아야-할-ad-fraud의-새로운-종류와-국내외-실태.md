@@ -32,7 +32,7 @@ Mobile Ad Fraud는 Mobile 광고 프로세스에서 부정한 방식으로 Traff
 
 Fraud Traffic이 발생할 수 있는 근본적인 원인은 App 혹은 Web의 이름을 모르는 채 인벤토리를 판매,구매 하는 프로그래머틱 광고 네트워크의 구조에 있습니다. 이러한 Fraud Traffic을 통해 수익을 얻는 주체는 매체사(Publisher) 혹은 그들을 이용하여 수익을 얻을 수 있습니다.
 
-![*(이미지출처: https://en.wikipedia.org/wiki/File:Fraud.jpg)*](https://lh6.googleusercontent.com/xr_6bxkQyVk6TlNyRelZQo25XbdJcTWY_OBtz6115NZNRDqaHuqGa0ZS-Y0uQV30A0JaZpQD0nk_kGoWzzFhPKug2Lin2fXLiNbJKO9wgzo2It5WCn_J5rsRHVUTew)
+![*(이미지출처: https://en.wikipedia.org/wiki/File:Fraud.jpg)*](https://upload.wikimedia.org/wikipedia/commons/6/62/Fraud.jpg)
 
 # **Ad fraud의 분류**
 
