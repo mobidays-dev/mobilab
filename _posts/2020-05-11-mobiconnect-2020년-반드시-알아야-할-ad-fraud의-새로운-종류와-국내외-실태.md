@@ -104,6 +104,4 @@ Impression 다음 단계인 Click에서도 Fraud가 발생합니다. Click Fraud
 
 > ### 더욱 상세한 Fraud와 국내외 실태가 궁금하시다 아래 리포트를 다운받아보세요.
 
-<script src="https://vigilant-kalam-608067.netlify.app/clickEvent.js"></script>
-
-<a onclick="onClick()" style="cursor:pointer"><img src="https://vigilant-kalam-608067.netlify.app/배너1.png" width="100%"></a>
+<a href="https://vigilant-kalam-608067.netlify.app/?title=2020년 반드시 알아야 할 AD Fraud의 새로운 종류와 국내외 실태" target="_blank" rel="noopener noreferrer"><img src="https://s3-ap-northeast-2.amazonaws.com/mobiinsidecontent/kr/wp-content/uploads/2020/05/12110027/%EB%B0%B0%EB%84%881.png" width="100%"></a>
